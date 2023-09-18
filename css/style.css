@@ -20,6 +20,12 @@ html{
     font-family: 'Poppins', 'Arial'; /* ik gebruik de font Poppins */
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 100rem; /* zorgt ervoor dat de div niet breder wordt dan 100rem */
+    padding: 0 4rem;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between; /* zorgt ervoor dat het logo en de links aan de zijkanten van de pagina staan */
@@ -64,12 +70,6 @@ html{
     height: 100vh;
     position: relative;
     width: 100%;
-}
-
-.hero-container {
-    margin: 0 auto;
-    max-width: 100rem; /* zorgt ervoor dat de div niet breder wordt dan 100rem */
-    padding: 0 4rem;
 }
 
 .hero-content {
@@ -132,12 +132,6 @@ html{
     padding: 15rem 0;
 }
 
-.about-container {
-    margin: 0 auto;
-    max-width: 100rem;
-    padding: 0 4rem;
-}
-
 .about-content {
     align-items: center;
     display: grid;
@@ -174,6 +168,10 @@ html{
     margin-bottom: 2rem;
 }
 
+.about-text h4 i {
+    font-size: 1rem;
+}
+
 .about-text h4 a {
     color: var(--main-text);
     transition: 0.3s;
@@ -190,3 +188,54 @@ html{
     line-height: 1.5;
 }
 
+#projects {
+    background-color: var(--main-grey-white);
+    padding: 15rem 0;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-content p {
+    color: var(--main-purple);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+.projects-content h3 {
+    color: var(--main-text);
+    font-size: 2.1rem;
+    margin-bottom: 6rem;
+}
+
+.placeholder-image {
+    background-color: var(--main-grey);
+    height: 20rem;
+    width: 100%;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item h5 {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.grid-item p {
+    font-size: 0.9rem;
+    color: var(--main-text);
+}

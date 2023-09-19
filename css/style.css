@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box; /* zorgt ervoor dat alle divs gelijk zijn */
+    
 }
 
 :root { /* ik zet hier alle kleuren in een variabele, zodat ik deze later makkelijk kan aanpassen */
@@ -47,7 +48,7 @@ html{
 }
 
 .header-container ul {
-    display: flex;
+    display: flex; /* zorgt ervoor dat de links naast elkaar staan */
 }
 
 .header-container ul li {
@@ -211,7 +212,7 @@ html{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
 }
 
 .projects-content h3 {
@@ -238,4 +239,20 @@ html{
 .grid-item p {
     font-size: 0.9rem;
     color: var(--main-text);
+    text-transform: none;
+}
+
+#footer {
+    background-color: var(--main-grey);
+    padding: 25px 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text h3 {
+    font-size: 1rem;
+    color: var(--main-white);
 }

@@ -4,7 +4,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box; /* zorgt ervoor dat alle divs gelijk zijn */
-    
 }
 
 :root { /* ik zet hier alle kleuren in een variabele, zodat ik deze later makkelijk kan aanpassen */
@@ -45,6 +44,7 @@ html{
     font-weight: 700;
     font-size: 1.20em; /* ik gebruik em ipv px, omdat em zich aanpast aan de font-size van de parent */
     display: block;
+    
 }
 
 .header-container ul {
@@ -76,6 +76,8 @@ html{
 .hero-content {
     align-items: center;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 10rem;
     gap: 10rem;
     height: 40rem;
@@ -207,12 +209,21 @@ html{
     text-transform: uppercase;
 }
 
+.project-text a {
+    color: var(--main-text);
+    font-size: 1rem;
+    margin-bottom: 6rem;
+    font-weight: 600;
+}
+.project-text {
+    padding-top: 5px;
+}
+
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 3rem;
-    margin-bottom: 0rem;
 }
 
 .projects-content h3 {
@@ -221,25 +232,67 @@ html{
     margin-bottom: 6rem;
 }
 
-.placeholder-image {
-    background-color: var(--main-grey);
-    height: 20rem;
-    width: 100%;
-}
-
 .grid-item {
+    display: block;
     text-align: center;
+    place-self: center;
+    object-fit: fill;
+    overflow: hidden;
 }
 
-.grid-item h5 {
-    padding-top: 1rem;
+.placeholder-image {
+    background: linear-gradient(135deg, #f9f9f9, #919397, rgba(45,46,50,1));
+    height: 18rem;
+    width: 1fr;
+    min-width: 28rem;
+}
+.placeholder-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 28rem;
+    overflow: hidden;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.grid-item a {
     font-size: 1.2rem;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
 }
 
 .grid-item p {
     font-size: 0.9rem;
     color: var(--main-text);
     text-transform: none;
+}
+
+.project-text {
+    font-weight: bold;
+}
+
+.project-buttons .button { 
+    border-width: 2px;
+    border-color: var(--main-text);
+    border-radius: 1rem;
+    border-style: solid;
+    color: var(--main-text);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding:0.5rem 2rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.project-buttons .button:hover {
+    background-color: var(--main-purple);
+    color: var(--main-white);
 }
 
 #footer {

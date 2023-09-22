@@ -206,6 +206,12 @@ html{
 	margin-bottom: 1rem;
 	text-transform: uppercase;
 }
+
+.projects-content h3 {
+	color: var(--main-text);
+	font-size: 2.1rem;
+	margin-bottom: 6rem;
+}
 .project-text a {
 	color: var(--main-text);
 	font-size: 1rem;
@@ -220,11 +226,7 @@ html{
 	flex-direction: row;
 	flex-wrap: wrap;
 	gap: 3rem;
-}
-.projects-content h3 {
-	color: var(--main-text);
-	font-size: 2.1rem;
-	margin-bottom: 6rem;
+	justify-content: center;
 }
 .grid-item {
 	display: block;
@@ -235,9 +237,9 @@ html{
 }
 .placeholder-image {
 	background: linear-gradient(135deg, #f9f9f9, #919397, rgba(45,46,50,1));
-	height: 18rem;
+	height: 15rem;
 	width: 1fr;
-	min-width: 28rem;
+	min-width: 25rem;
 }
 .placeholder-image img {
 	width: 100%;
@@ -280,10 +282,31 @@ html{
 .project-buttons .button:hover {
 	background-color: var(--main-purple);
 	color: var(--main-white);
+	border-color: var(--main-purple);
+}
+
+#opdracht {
+	background-color: #512B81;
+	padding: 25px 50px;
+}
+
+.opdracht-content {
+	display: flex;
+	justify-content: center;
+}
+
+.opdracht-content h1 {
+	color: var(--main-white);
 }
 #footer {
-	background-color: var(--main-grey);
+	background-color: var(--main-grey-white);
 	padding: 25px 50px;
+	box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+
+.footer-container {
+	left: 0;
+	bottom: 0;
 }
 .footer-content {
 	display: flex;
@@ -291,5 +314,12 @@ html{
 }
 .footer-text h3 {
 	font-size: 1rem;
-	color: var(--main-white);
+	color: var(--main-text);
 }
+
+@media only screen and (max-width: 600px) {
+	.container {
+		padding: 0 2rem;
+	}
+}
+

@@ -4,69 +4,56 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
-	/* zorgt ervoor dat alle divs gelijk zijn */
 }
 :root {
 	/* ik zet hier alle kleuren in een variabele, zodat ik deze later makkelijk kan aanpassen */
-	--main-purple: #512B81;
-	--main-text: #2d2e32;
-	--main-grey-white: #f9f9f9;
-	--main-white: #fff;
-	--main-grey: #555;
+	--background-1: #2b2d42;
+	--background-2: #222435;
+	--text-color-1: #edf2f4;
+	--text-color-2: #8d99ae;
+	--title-color-1: #ef233c;
 }
 html{
-	background-color: var(--main-grey-white);
+	background-color: var(--background-1);
 	scroll-behavior: smooth;
-	/* zorgt ervoor dat de pagina soepel naar beneden scrollt */
 	font-family: 'Poppins', 'Arial';
-	/* ik gebruik de font Poppins */
 }
 .container {
 	margin: 0 auto;
 	max-width: 100rem;
-	/* zorgt ervoor dat de div niet breder wordt dan 100rem */
 	padding: 0 4rem;
 }
 .header-container {
 	display: flex;
 	justify-content: space-between;
-	/* zorgt ervoor dat het logo en de links aan de zijkanten van de pagina staan */
 	padding: 25px 50px;
-	/* padding aan de boven en onderkant van de header */
 	left: 0;
 	top: 0;
 	font-size: 1rem;
-	/* ik gebruik rem ipv px, omdat rem zich aanpast aan de font-size van de parent */
-	background-color: var(--main-grey-white);
+	background-color: var(--background-2);
 	box-shadow: 0 0 10px rgba(0,0,0,.09);
-	/* zorgt voor een schaduw onder de header */
 	z-index: 200;
-	/* zorgt ervoor dat de header bovenaan staat */
 	position: fixed;
-	/* zorgt ervoor dat de header bovenaan blijft staan */
 	width: 100%;
-	/* zorgt ervoor dat de header de volledige breedte van de pagina inneemt */
 }
 .header-logo a {
 	font-weight: 700;
 	font-size: 1.20em;
-	/* ik gebruik em ipv px, omdat em zich aanpast aan de font-size van de parent */
 	display: block;
 }
 .header-container ul {
 	display: flex;
-	/* zorgt ervoor dat de links naast elkaar staan */
 }
 .header-container ul li {
 	padding: 0 10px;
 	font-weight: 600;
 }
 .header-container a {
-	color: var(--main-text);
+	color: var(--text-color-1);
 	transition: 0.2s;
 }
 .header-container a:hover {
-	color: var(--main-purple);
+	color: var(--title-color-1);
 	text-decoration: underline;
 }
 #home {
@@ -94,47 +81,48 @@ html{
 	justify-content: center;
 	position: relative;
 }
+
 .hero-text h1 {
-	color: var(--main-text);
+	color: var(--text-color-1);
 	font-size: 3rem;
 	line-height: 1.2;
 	margin-bottom: 1rem;
 	margin-top: 1rem;
 }
 .hero-text p {
-	color: #555;
+	color: var(--text-color-2);
 	font-size: 1rem;
 	font-weight: 500;
 }
 .hero-text a {
-	color: var(--main-text);
-	transition: 0.3s;
+	color: var(--text-color-1);
+	transition: 0.2s;
 }
 .hero-text a:hover {
-	color: var(--main-purple);
+	color: var(--title-color-1);
 	text-decoration: underline;
 }
 .hero-text span {
-	color: var(--main-blue);
+	color: var(--text-color-1);
 	font-size: 1rem;
 	display: flex;
 	margin: 1rem 0;
 	gap: 1rem;
 }
 .hero-text span i {
-	color: var(--main-text);
+	color: var(--text-color-1);
 	font-size: 2rem;
 	transition: 0.2s;
 }
 .hero-text span i:hover {
-	color: var(--main-purple);
+	color: var(--title-color-1);
 }
 .hero-img img{
 	width: 20rem;
 	height: 20rem;
 }
 #about {
-	background-color: var(--main-white);
+	background-color: var(--background-2);
 	padding: 15rem 0;
 }
 .about-content {
@@ -147,30 +135,31 @@ html{
 	position: relative;
 }
 .about-img img {
-	width: 50%;
-	height: 50%;
+	width: 60%;
+	height: 60%;
 	object-fit: cover;
+	transform: rotateY(180deg);
 }
 .about-text {
 	padding-right: 1.5rem;
 }
 .about-text a {
-	color: var(--main-text);
+	color: var(--text-color-1);
 	transition: 0.3s;
 }
 .about-text a:hover {
-	color: var(--main-purple);
+	color: var(--title-color-1);
 	text-decoration: underline;
 }
 .about-text h3 {
-	color: var(--main-purple);
+	color: var(--title-color-1);
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 1rem;
 	text-transform: uppercase;
 }
 .about-text h4 {
-	color: var(--main-text);
+	color: var(--text-color-1);
 	font-size: 2.1rem;
 	line-height: 1.4;
 	margin-bottom: 2rem;
@@ -179,28 +168,30 @@ html{
 	font-size: 1rem;
 }
 .about-text h4 a {
-	color: var(--main-text);
+	color: var(--text-color-1);
 	transition: 0.3s;
 }
 .about-text h4 a:hover {
-	color: var(--main-purple);
+	color: var(--title-color-2);
 }
 .about-text p {
-	color: var(--main-grey);
+	color: var(--text-color-2);
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
 }
+
+
 #projects {
-	background-color: var(--main-grey-white);
 	padding: 15rem 0;
 }
+
 .projects-content {
 	display: flex;
 	flex-direction: column;
 }
 .projects-content p {
-	color: var(--main-purple);
+	color: var(--title-color-1);
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 1rem;
@@ -208,12 +199,12 @@ html{
 }
 
 .projects-content h3 {
-	color: var(--main-text);
+	color: var(--text-color-1);
 	font-size: 2.1rem;
 	margin-bottom: 6rem;
 }
 .project-text a {
-	color: var(--main-text);
+	color: var(--text-color-1);
 	font-size: 1rem;
 	margin-bottom: 6rem;
 	font-weight: 600;
@@ -236,7 +227,7 @@ html{
 	overflow: hidden;
 }
 .placeholder-image {
-	background: linear-gradient(135deg, #f9f9f9, #919397, rgba(45,46,50,1));
+	background: linear-gradient(135deg, rgba(237,242,244,1) 0%, rgba(141,153,174,1) 95%);
 	height: 15rem;
 	width: 1fr;
 	min-width: 25rem;
@@ -259,7 +250,7 @@ html{
 }
 .grid-item p {
 	font-size: 0.9rem;
-	color: var(--main-text);
+	color: var(--text-color-1);
 	text-transform: none;
 }
 .project-text {
@@ -267,10 +258,10 @@ html{
 }
 .project-buttons .button {
 	border-width: 2px;
-	border-color: var(--main-text);
+	border-color: var(--text-color-1);
 	border-radius: 1rem;
 	border-style: solid;
-	color: var(--main-text);
+	color: var(--text-color-1);
 	cursor: pointer;
 	font-size: 1rem;
 	font-weight: bold;
@@ -280,13 +271,13 @@ html{
 	transition: 0.3s;
 }
 .project-buttons .button:hover {
-	background-color: var(--main-purple);
-	color: var(--main-white);
-	border-color: var(--main-purple);
+	background-color: var(--title-color-1);
+	color: var(--text-color-1);
+	border-color: var(--title-color-1);
 }
 
 #opdracht {
-	background-color: #512B81;
+	background-color: var(--title-color-1);
 	padding: 25px 50px;
 }
 
@@ -295,11 +286,8 @@ html{
 	justify-content: center;
 }
 
-.opdracht-content h1 {
-	color: var(--main-white);
-}
 #footer {
-	background-color: var(--main-grey-white);
+	background-color: var(--background-2);
 	padding: 25px 50px;
 	box-shadow: 0 0 10px rgba(0,0,0,.09);
 }
@@ -314,7 +302,8 @@ html{
 }
 .footer-text h3 {
 	font-size: 1rem;
-	color: var(--main-text);
+	color: var(--text-color-1);
+	text-align: center;
 }
 
 @media only screen and (max-width: 600px) {

@@ -22,7 +22,7 @@
                     <div class="hero-text">
                         <h1>Hi, I'm <b>Bram Suurd</b></h1>
                         
-                        <p>Currently studying <i>Information Technology</i> at <a target="_blank" href="https://www.nhlstenden.com/"><b>NHL Stenden <i class='bx bx-link-external' ></i></b></a></p>
+                        <p>Currently studying <i>Information Technology</i> at <a target="_blank" href="https://www.nhlstenden.com/en/courses/information-technology"><b>NHL Stenden <i class='bx bx-link-external' ></i></b></a></p>
                         
                         <span><a target="_blank" href="https://github.com/BramSuurdje"><i class='bx bxl-github'></i></a> <a target="_blank" href="https://www.linkedin.com/in/bramsuurd/"><i class='bx bxl-linkedin-square' ></i></a></span>
                     </div>
@@ -39,11 +39,11 @@
         <div class="container">
         <div class="about-content">
             <div class="about-img">
-                <img src="img/undraw_about_me_re_82bv.svg" alt="About me">
+                <img src="img/undraw_code_inspection_bdl7.svg" alt="About me">
             </div>
             <div class="about-text">
-              <h3>About me</h3>  
-              <h4>A Information Technology Student 
+                <h3>About me</h3>  
+                <h4>A Information Technology Student 
                 <br>
                 based in <a target="_blank" href="https://maps.app.goo.gl/o6vtFYk4X2Q7PLrD9">Emmen,The Netherlands <i class='bx bx-link-external' ></i></a></h4>
                 <p>I live in the Netherlands, and I'm currently a student at <a href="https://nhlstenden.com/en" target="_blank">NHL Stenden <i class='bx bx-link-external' ></i></a> in Emmen, where I'm studying Information Technology. What drew me to programming is the incredible potential it holds for creating and innovating. The world of coding offers boundless opportunities to bring new ideas to life</p>
@@ -61,7 +61,7 @@
                 <h3>Here are all the projects that i've done</h3>
                 <div class="projects-grid">
                     <div class="grid-item">
-                        <div class="placeholder-image">
+                    <div class="placeholder-image">
                         <img src="/img/Cirle-Solutions.png" loading="lazy" alt="">
                         </div>
                             <div class="project-text">
@@ -110,14 +110,13 @@
                     </div>
                     <div class="grid-item">
                         <div class="placeholder-image">
-                        <!-- <img src="" loading="lazy" alt=""> -->
+                        <img src="img/DVD-Video_Logo.svg.png" loading="lazy" alt="">
                         </div>
                             <div class="project-text">
-                                <a href="">Project</a>
+                                <a href="">Videotheek</a>
                             </div>
                             <div class="project-buttons">
-                                <a class="button" href="#">More Details</a>
-                                <a class="button" href="#">Live Demo</a>
+                                <a class="button" href="/project5/videotheek.php">More Details</a>
                             </div>
                     </div>
                 </div>

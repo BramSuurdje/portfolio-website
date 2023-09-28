@@ -38,7 +38,5 @@
     $mijl = ktm($kilometer);
     echo "<p>$kilometer km/u is $mijl mph.</p>"
     ?>
-
-    <?php include("footer.php"); ?>
 </body>
 </html>

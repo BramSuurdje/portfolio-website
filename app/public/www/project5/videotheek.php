@@ -65,6 +65,5 @@ $recentBezocht = true;
 controleerAanmelding($leeftijd, $geslacht, $recentBezocht);
 
     ?>
-    <?php include("../footer.php") ?>
 </body>
 </html>

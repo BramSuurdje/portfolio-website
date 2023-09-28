@@ -116,7 +116,7 @@
                                 <a href="">Videotheek</a>
                             </div>
                             <div class="project-buttons">
-                                <a class="button" href="/project5/videotheek.php">More Details</a>
+                                <a class="button" href="project5/videotheek.php">More Details</a>
                             </div>
                     </div>
                 </div>
@@ -153,15 +153,7 @@
         </div>
     </section>
 
-    <footer id="footer" class="footer">
-        <div class="footercontainer">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <h3>&copy; 2023 Bram Suurd</h3>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include("footer.php") ?>
 
 </body>
 </html>

@@ -13,7 +13,8 @@
 	--text-color-2: #8d99ae;
 	--title-color-1: #ef233c;
 }
-html{
+
+html {
 	background-color: var(--background-1);
 	color: var(--text-color-1);
 	scroll-behavior: smooth;
@@ -277,6 +278,113 @@ html{
 	border-color: var(--title-color-1);
 }
 
+#contact {
+	background-color: var(--background-2);
+	padding: 7rem 0;
+}
+
+.contact-text p {
+	display: flex;
+	color: var(--title-color-1);
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+.contact-items {
+	display: flex;
+	width: 500px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.contact-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.text-input {
+	width: 50%;
+	justify-content: center;
+	display: flex;
+}
+.text-input input {
+	border-radius: 7px;
+	padding:0.7rem 3.4rem 0.7rem 1.6rem;
+	border-color: var(--background-1);
+	margin: 10px 5px;
+	border-style: solid;
+	font-family: Poppins;
+	font-size: 0.8rem;
+}
+
+.contact-select {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+.contact-select select {
+	width: 100%;
+	padding:0.7rem 3.1rem 0.7rem 1.5rem;
+	margin: 10px 5px;
+	border-radius: 7px;
+	border-color: var(--background-1);
+	border-width: 2px;
+}
+
+.contact-message {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.contact-message textarea {
+	width: 100%;
+	padding:0.7rem 3.1rem 0.7rem 1.5rem;
+	margin: 10px 5px;
+	border-radius: 7px;
+	border-color: var(--background-1);
+	border-width: 2px;
+	min-width: 490px;
+	min-height: 100px;
+	max-height: 250px;
+	font-family: Poppins;
+}
+
+.contact-message textarea:focus{
+	border-color: var(--title-color-1);
+}
+
+.contact-button {
+	border-width: 2px;
+	border-color: var(--title-color-1);
+	border-radius: 1rem;
+	border-style: solid;
+	color: var(--text-color-1);
+	background-color:var(--title-color-1);
+	cursor: pointer;
+	font-size: 1rem;
+	margin-left: 10px;
+	margin-top: 15px;
+	font-weight: bold;
+	padding:0.8rem 4rem;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+::placeholder {
+	opacity: 1;
+	color: black;
+}
+.contact-button:hover {
+	background-color: transparent;
+	color: var(--text-color-1);
+	border-color: var(--title-color-1);
+}
+
+.contact-newsletter {
+	margin-left: 10px;
+}
 #opdracht {
 	background-color: var(--title-color-1);
 	padding: 25px 50px;

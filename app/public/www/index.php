@@ -43,7 +43,7 @@
             </div>
             <div class="about-text">
                 <h3>About me</h3>  
-                <h4>A Information Technology Student 
+                <h4>An Information Technology Student 
                 <br>
                 based in <a target="_blank" href="https://maps.app.goo.gl/o6vtFYk4X2Q7PLrD9">Emmen,The Netherlands <i class='bx bx-link-external' ></i></a></h4>
                 <p>I live in the Netherlands, and I'm currently a student at <a href="https://nhlstenden.com/en" target="_blank">NHL Stenden <i class='bx bx-link-external' ></i></a> in Emmen, where I'm studying Information Technology. What drew me to programming is the incredible potential it holds for creating and innovating. The world of coding offers boundless opportunities to bring new ideas to life</p>
@@ -124,6 +124,54 @@
         </div>
     </section>
 
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <div class="contact-text">
+                    <p>contact</p>
+                    </div>
+                    <form action="contact.php" method="post" class="contact-form">
+                        <div class="contact-items">
+                            <div class="text-input">
+                                <input type="text" name="name" placeholder="Enter your name:" required>
+                            </div>
+    
+                            <div class="text-input">
+                                <input type="email" name="email" placeholder="Enter your email:" required>
+                            </div>
+    
+                            <div class="text-input">
+                                <input type="text" name="subject" placeholder="Enter your subject:" required>
+                            </div>
+    
+                            <div class="contact-select">
+                                <select name="type" required>
+                                    <option value="why">Reason for contact:</option>
+                                    <option value="Question">Question</option>
+                                    <option value="Feedback">Feedback</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+    
+                            <div class="contact-message">
+                                <textarea name="message"placeholder="Write your message:" required></textarea>
+                            </div>
+                        </div>
+                        <div class="contact-newsletter">
+                            <label for="newsletter">Subscribe to Newsletter:</label>
+                            <input type="radio" name="newsletter" value="Yes" checked> Yes
+                            <input type="radio" name="newsletter" value="No"> No
+                        </div>
+                        <div class="contact-buttons">
+                            <input class="contact-button" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="opdracht" class="opdracht">
         <div class="opdracht-container">
             <div class="opdracht-content">
@@ -152,6 +200,8 @@
             </div>
         </div>
     </section>
+
+
 
     <?php include("footer.php") ?>
 

@@ -11,7 +11,7 @@
 	--background-2: #222435;
 	--text-color-1: #edf2f4;
 	--text-color-2: #8d99ae;
-	--title-color-1: #ef233c;
+	--title-color-1: #713ABE;
 }
 
 html {
@@ -83,7 +83,6 @@ html {
 	justify-content: center;
 	position: relative;
 }
-
 .hero-text h1 {
 	color: var(--text-color-1);
 	font-size: 3rem;
@@ -182,12 +181,9 @@ html {
 	font-weight: 500;
 	line-height: 1.5;
 }
-
-
 #projects {
 	padding: 15rem 0;
 }
-
 .projects-content {
 	display: flex;
 	flex-direction: column;
@@ -199,7 +195,6 @@ html {
 	margin-bottom: 1rem;
 	text-transform: uppercase;
 }
-
 .projects-content h3 {
 	color: var(--text-color-1);
 	font-size: 2.1rem;
@@ -277,12 +272,10 @@ html {
 	color: var(--text-color-1);
 	border-color: var(--title-color-1);
 }
-
 #contact {
 	background-color: var(--background-2);
 	padding: 15rem 0;
 }
-
 .contact-text p {
 	display: flex;
 	color: var(--title-color-1);
@@ -318,7 +311,6 @@ html {
 	font-family: Poppins;
 	font-size: 0.8rem;
 }
-
 .contact-select {
 	width: 50%;
 	display: flex;
@@ -332,13 +324,11 @@ html {
 	border-color: var(--background-1);
 	border-width: 2px;
 }
-
 .contact-message {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
-
 .contact-message textarea {
 	width: 100%;
 	padding:0.7rem 3.1rem 0.7rem 1.5rem;
@@ -351,11 +341,9 @@ html {
 	max-height: 250px;
 	font-family: Poppins;
 }
-
 .contact-message textarea:focus{
 	border-color: var(--title-color-1);
 }
-
 .contact-button {
 	border-width: 2px;
 	border-color: var(--title-color-1);
@@ -381,7 +369,6 @@ html {
 	color: var(--text-color-1);
 	border-color: var(--title-color-1);
 }
-
 .contact-newsletter {
 	margin-left: 10px;
 }
@@ -389,12 +376,10 @@ html {
 	background-color: var(--title-color-1);
 	padding: 25px 50px;
 }
-
 .opdracht-content {
 	display: flex;
 	justify-content: center;
 }
-
 #footer {
 	background-color: var(--background-2);
 	padding: 25px 50px;
@@ -404,13 +389,11 @@ html {
 	bottom: 0;
 	width: 100%;
 }
-
 .footer-text h3 {
 	font-size: 1rem;
 	color: var(--text-color-1);
 	text-align: center;
 }
-
 @media only screen and (max-width: 600px) {
 	.container {
 		padding: 0 2rem;

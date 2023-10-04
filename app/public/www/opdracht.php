@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+/* 
+* Filename      : opdracht.php
+* Assignment    : portfolio website
+* Created       : 10/2/2023
+* Description   : 
+* Programmer    : Bram Suurd | 5371333
+*/
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +27,8 @@
 
     <?php
 
-    function ctf($celsius) {
+    function ctf($celsius) 
+    {
         $fahrenheit = $celsius * 9/5 + 32;
         return $fahrenheit;
     }
@@ -29,7 +39,8 @@
     ?>
 
     <?php
-    function ktm($kilometer) {
+    function ktm($kilometer) 
+    {
         $mijl = $kilometer * 0.6214;
         return $mijl;
     }

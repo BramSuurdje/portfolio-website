@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+/* 
+* Filename      : opdracht2.php
+* Assignment    : portfolio website
+* Created       : 10/2/2023
+* Description   : 
+* Programmer    : Bram Suurd | 5371333
+*/
+?>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -42,33 +51,44 @@
 
 <?php
 
-function streep () {
-    for ($i = 0 ; $i < 1 ; $i++){
-        for($j=1;$j<11;$j++){
+function streep () 
+{
+    for ($i = 0 ; $i < 1 ; $i++)
+    {
+        for($j=1;$j<11;$j++)
+        {
             echo "*";
         }
         echo "<br/>";
     }
 }
 function vierkant () {
-    for ($i = 0 ; $i < 4 ; $i++){
-        for($j=1;$j<11;$j++){
+    for ($i = 0 ; $i < 4 ; $i++)
+    {
+        for($j=1;$j<11;$j++)
+        {
             echo "*";
         }
         echo "<br/>";
     }
 }
-function halveKerstBoom () {
-    for($i=0;$i<=9;$i++){        
-        for($j=0;$j<=$i;$j++){
+function halveKerstBoom () 
+{
+    for($i=0;$i<=9;$i++)
+    {        
+        for($j=0;$j<=$i;$j++)
+        {
             echo "*";
         }
         echo "<br/>";
     }
 }
-function halveKerstBoomO() {
-    for($i=0 ; $i<=9 ; $i++) {
-        for($j=9-$i ; $j>=0 ; $j--){
+function halveKerstBoomO() 
+{
+    for($i=0 ; $i<=9 ; $i++) 
+    {
+        for($j=9-$i ; $j>=0 ; $j--)
+        {
         echo "*";
         }
     echo "<br>";
@@ -91,7 +111,8 @@ $socialImg = ["img/facebook.png", "img/twitter.png", "img/instagram.png", "img/l
 $socialName = ["Facebook", "Twitter", "Instagram", "LinkedIn"];
 $socialURL = ["https://www.facebook.com", "https://www.twitter.com", "https://www.instagram.com", "https://www.linkedin.com"];
 
-for ($i = 0; $i < count($socialImg); $i++) {
+for ($i = 0; $i < count($socialImg); $i++) 
+{
     echo "<a href='" . $socialURL[$i] . "' target='_blank'>";
     echo "<img src='" . $socialImg[$i] . "' alt='" . $socialName[$i] . "' width='100' height='100'>";
     echo "</a>";

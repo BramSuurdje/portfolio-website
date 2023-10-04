@@ -134,6 +134,8 @@ html {
 }
 .about-img {
 	position: relative;
+	display: flex;
+	justify-content: center;
 }
 .about-img img {
 	width: 60%;
@@ -180,6 +182,10 @@ html {
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
+}
+
+.about-text p span {
+	margin-top: 20px;
 }
 #projects {
 	padding: 15rem 0;
@@ -301,15 +307,25 @@ html {
 	width: 50%;
 	justify-content: center;
 	display: flex;
+	color: var(--text-color-1);
 }
 .text-input input {
 	border-radius: 7px;
 	padding:0.7rem 3.4rem 0.7rem 1.6rem;
 	border-color: var(--background-1);
 	margin: 10px 5px;
+	color: white;
 	border-style: solid;
 	font-family: Poppins;
 	font-size: 0.8rem;
+	background-color: rgb(32, 32, 32);
+	transition: 0.2s;
+}
+
+.text-input input:focus {
+	outline-color: var(--title-color-1);
+	border-width: 0;
+	text-decoration: none;
 }
 .contact-select {
 	width: 50%;
@@ -320,8 +336,10 @@ html {
 	width: 100%;
 	padding:0.7rem 3.1rem 0.7rem 1.5rem;
 	margin: 10px 5px;
+	color: white;
 	border-radius: 7px;
 	border-color: var(--background-1);
+	background-color: rgb(32, 32, 32);
 	border-width: 2px;
 }
 .contact-message {
@@ -335,6 +353,8 @@ html {
 	margin: 10px 5px;
 	border-radius: 7px;
 	border-color: var(--background-1);
+	color: var(--text-color-1);
+	background-color: rgb(32, 32, 32);
 	border-width: 2px;
 	min-width: 490px;
 	min-height: 100px;
@@ -343,6 +363,8 @@ html {
 }
 .contact-message textarea:focus{
 	border-color: var(--title-color-1);
+	outline-color: var(--title-color-1);
+	text-decoration-color: var(--title-color-1);
 }
 .contact-button {
 	border-width: 2px;
@@ -362,7 +384,7 @@ html {
 }
 ::placeholder {
 	opacity: 1;
-	color: black;
+	color: white;
 }
 .contact-button:hover {
 	background-color: transparent;

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+/* 
+* Filename      : index.php
+* Assignment    : portfolio website
+* Created       : 10/2/2023
+* Description   : 
+* Programmer    : Bram Suurd | 5371333
+*/
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="expires" content="0">
-
 </head>
 
 <body>
@@ -57,9 +61,8 @@
                         <br>
                         based in <a target="_blank" href="https://maps.app.goo.gl/o6vtFYk4X2Q7PLrD9">Emmen,The Netherlands <i class='bx bx-link-external'></i></a>
                     </h4>
-                    <p>I live in the Netherlands, and I'm currently a student at <a href="https://nhlstenden.com/en" target="_blank">NHL Stenden <i class='bx bx-link-external'></i></a> in Emmen, where I'm studying Information Technology. What drew me to programming is the incredible potential it holds for creating and innovating. The world of coding offers boundless opportunities to bring new ideas to life.</p>
-                    <br>
-                    <p>Before coming to NHL Stenden, I was a student at <a href="https://www.drenthecollege.nl/english " target="_blank">Drenthe College <i class='bx bx-link-external'></i></a> in Emmen, where I studied "Expert IT System and Devices." This earlier experience provided me with a good foundation in technology. Now, at NHL Stenden, I'm excited to learn more and explore the world of Information Technology in greater depth.</p>
+                    <p>I live in the Netherlands, and I'm currently a student at <a href="https://nhlstenden.com/en" target="_blank">NHL Stenden <i class='bx bx-link-external'></i></a> in Emmen, where I'm studying Information Technology. What drew me to programming is the incredible potential it holds for creating and innovating. The world of coding offers boundless opportunities to bring new ideas to life.
+                    <span><br><br>Before coming to NHL Stenden, I was a student at <a href="https://www.drenthecollege.nl/english " target="_blank">Drenthe College <i class='bx bx-link-external'></i></a> in Emmen, where I studied "Expert IT System and Devices." This earlier experience provided me with a good foundation in technology. Now, at NHL Stenden, I'm excited to learn more and explore the world of Information Technology in greater depth.</span></p>
                 </div>
             </div>
         </div>
@@ -158,7 +161,7 @@
 
                             <div class="contact-select">
                                 <select name="type" required>
-                                    <option value="why">Reason for contact:</option>
+                                    <option selected value="Why">Reason for contact:</option>
                                     <option value="Question">Question</option>
                                     <option value="Feedback">Feedback</option>
                                     <option value="Other">Other</option>
@@ -170,7 +173,7 @@
                             </div>
                         </div>
                         <div class="contact-newsletter">
-                            <label for="newsletter">Subscribe to Newsletter:</label>
+                            <label for="contact-newsletter">Subscribe to Newsletter:</label>
                             <input type="radio" name="newsletter" value="Yes" checked> Yes
                             <input type="radio" name="newsletter" value="No"> No
                         </div>
@@ -190,13 +193,17 @@
                     <?php
                     function vergelijkMet100($getal)
                     {
-                        if ($getal === null) {
+                        if ($getal === null) 
+                        {
                             echo "Geen getal opgegeven.";
-                        } elseif ($getal > 100) {
+                        } elseif ($getal > 100) 
+                        {
                             echo "$getal is hoger dan 100.";
-                        } elseif ($getal < 100) {
+                        } elseif ($getal < 100) 
+                        {
                             echo "$getal is later dan 100.";
-                        } else {
+                        } else 
+                        {
                             echo "$getal is gelijk aan 100.";
                         }
                     }
@@ -209,8 +216,6 @@
             </div>
         </div>
     </section>
-
-
 
     <?php include("footer.php") ?>
 

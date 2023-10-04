@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+/* 
+* Filename      : videotheek.php
+* Assignment    : portfolio website
+* Created       : 10/2/2023
+* Description   : 
+* Programmer    : Bram Suurd | 5371333
+*/
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,25 +42,31 @@
         </header>
 
     <?php
-    function controleerAanmelding($leeftijd, $geslacht, $recentBezocht) {
+    function controleerAanmelding($leeftijd, $geslacht, $recentBezocht) 
+    {
     $meldingen = array();
 
-    if ($leeftijd < 18) {
+    if ($leeftijd < 18) 
+    {
         $meldingen[] = "Je wordt doorgestuurd naar de kinderafdeling.";
     }
 
-    if ($geslacht == "vrouw") {
+    if ($geslacht == "vrouw") 
+    {
         $meldingen[] = "Er komt binnenkort een lady's night evenement.";
     }
 
-    if ($recentBezocht) {
+    if ($recentBezocht) 
+    {
         $meldingen[] = "Je krijgt korting omdat je de website onlangs hebt bezocht.";
     }
 
-    if (count($meldingen) == 3) {
+    if (count($meldingen) == 3) 
+    {
         echo "Foutmelding: Alle voorwaarden zijn van toepassing.";
     } else {
-        foreach ($meldingen as $melding) {
+        foreach ($meldingen as $melding) 
+        {
             echo "<p>$melding</p>";
         }
     }

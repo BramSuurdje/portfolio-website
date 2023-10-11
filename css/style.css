@@ -306,15 +306,16 @@ html {
 	width: 100%;
 }
 .text-input {
-	width: 50%;
 	justify-content: center;
 	display: flex;
 	color: var(--text-color-1);
+	width: 100%;
 }
 .text-input input {
 	border-radius: 7px;
-	padding:0.7rem 3.4rem 0.7rem 1.6rem;
+	padding:0.7rem 0 0.7rem 1rem;
 	border-color: var(--background-1);
+	width: 100%;
 	margin: 10px 5px;
 	color: white;
 	border-style: solid;
@@ -323,14 +324,16 @@ html {
 	background-color: rgb(32, 32, 32);
 	transition: 0.2s;
 }
-
+.contact-items-1 {
+	display: flex;
+	width: 100%;
+}
 .text-input input:focus {
 	outline-color: var(--title-color-1);
-	border-width: 0;
 	text-decoration: none;
 }
 .contact-select {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
@@ -342,7 +345,6 @@ html {
 	border-radius: 7px;
 	border-color: var(--background-1);
 	background-color: rgb(32, 32, 32);
-	border-width: 2px;
 }
 .contact-message {
 	width: 100%;

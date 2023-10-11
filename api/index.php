@@ -130,7 +130,7 @@
                             <a href="">Videotheek</a>
                         </div>
                         <div class="project-buttons">
-                            <a class="button" href="api/videotheek.php">More Details</a>
+                            <a class="button" href="/api/videotheek.php">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -147,27 +147,29 @@
                     </div>
                     <form action="contact.php" method="post" class="contact-form">
                         <div class="contact-items">
-                            <div class="text-input">
-                                <input type="text" name="name" placeholder="Enter your name:" required>
-                            </div>
+                            <div class="contact-items-1">
+                                <div class="text-input">
+                                    <input type="text" name="name" placeholder="Enter your name:" required>
+                                </div>
 
-                            <div class="text-input">
-                                <input type="email" name="email" placeholder="Enter your email:" required>
+                                <div class="text-input">
+                                    <input type="email" name="email" placeholder="Enter your email:" required>
+                                </div>
                             </div>
+                            <div class="contact-items-1">
+                                <div class="text-input">
+                                    <input type="text" name="subject" placeholder="Enter your subject:" required>
+                                </div>
 
-                            <div class="text-input">
-                                <input type="text" name="subject" placeholder="Enter your subject:" required>
+                                <div class="contact-select">
+                                    <select name="type" required>
+                                        <option selected value="Why">Reason for contact:</option>
+                                        <option value="Question">Question</option>
+                                        <option value="Feedback">Feedback</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div class="contact-select">
-                                <select name="type" required>
-                                    <option selected value="Why">Reason for contact:</option>
-                                    <option value="Question">Question</option>
-                                    <option value="Feedback">Feedback</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-
                             <div class="contact-message">
                                 <textarea name="message" placeholder="Write your message:" required></textarea>
                             </div>

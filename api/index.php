@@ -130,7 +130,7 @@
                             <a href="">Videotheek</a>
                         </div>
                         <div class="project-buttons">
-                            <a class="button" href="project5/videotheek.php">More Details</a>
+                            <a class="button" href="api/videotheek.php">More Details</a>
                         </div>
                     </div>
                 </div>

@@ -14,7 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoTheek</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/videotheek.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -24,22 +23,7 @@
 <body>
 <br><br><br><br> <!-- om er voor te zorgen dat de text onder de header weg komt :)))) ik zal het niet doen bij het tentamen -->
 
-    <header>
-            <nav class="header-container">
-                <div class="header-logo">
-                    <a href="/api/index.php#home">bram.tech</a>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="/api/index.php#home">Home</a></li>
-                        <li><a href="/api/index.php#about">About</a></li>
-                        <li><a href="/api/index.php#projects">Projects</a></li>
-                        <!-- <li><a href="index.php#contact">Contact</a></li> -->
-                        <li><a href="../opdracht.php">PHP</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <?php include("header.php"); ?>
 
     <?php
     function controleerAanmelding($leeftijd, $geslacht, $recentBezocht) 

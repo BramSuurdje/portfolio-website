@@ -10,7 +10,7 @@
 <header>
     <nav class="header-container">
         <div class="header-logo">
-            <a href="api/index.php#home">bram</a>
+            <a href="/api/index.php#home">bram</a>
         </div>
         <div>
             <ul>

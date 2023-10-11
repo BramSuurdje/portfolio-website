@@ -236,11 +236,11 @@ html {
 	min-width: 25rem;
 }
 .placeholder-image img {
-	width: 100%;
+	width: 400px;
 	height: 100%;
 	max-width: 28rem;
 	overflow: hidden;
-	object-fit: cover;
+	object-fit:cover;
 	justify-content: center;
 }
 .grid-item a {

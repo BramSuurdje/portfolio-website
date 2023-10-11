@@ -76,7 +76,7 @@
                 <div class="projects-grid">
                     <div class="grid-item">
                         <div class="placeholder-image">
-                            <img src="/img/Cirle-Solutions.png" loading="lazy" alt="">
+                            <img src="img/Cirle-Solutions.png" loading="lazy" alt="">
                         </div>
                         <div class="project-text">
                             <a href="">Project Cirle-Solutions</a>

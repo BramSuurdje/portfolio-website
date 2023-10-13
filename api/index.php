@@ -13,12 +13,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
                         </span>
                     </div>
                     <div class="hero-img">
-                        <img src="img/undraw_programming_re_kg9v.svg" alt="guy programming">
+                        <img src="../img/undraw_programming_re_kg9v.svg" alt="guy programming">
                     </div>
 
                 </div>
@@ -53,7 +53,7 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-img">
-                    <img src="img/undraw_code_inspection_bdl7.svg" alt="About me">
+                    <img src="../img/undraw_code_inspection_bdl7.svg" alt="About me">
                 </div>
                 <div class="about-text">
                     <h3>About me</h3>
@@ -76,7 +76,7 @@
                 <div class="projects-grid">
                     <div class="grid-item">
                         <div class="placeholder-image">
-                            <img src="/img/Cirle-Solutions.png" loading="lazy" alt="">
+                            <img src="../img/Cirle-Solutions.png" loading="lazy" alt="">
                         </div>
                         <div class="project-text">
                             <a href="">Project Cirle-Solutions</a>
@@ -124,13 +124,13 @@
                     </div>
                     <div class="grid-item">
                         <div class="placeholder-image">
-                            <img src="img/DVD-Video_Logo.svg.png" loading="lazy" alt="">
+                            <img src="../img/DVD-Video_Logo.svg.png" loading="lazy" alt="">
                         </div>
                         <div class="project-text">
                             <a href="">Videotheek</a>
                         </div>
                         <div class="project-buttons">
-                            <a class="button" href="project5/videotheek.php">More Details</a>
+                            <a class="button" href="/api/videotheek.php">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -147,27 +147,29 @@
                     </div>
                     <form action="contact.php" method="post" class="contact-form">
                         <div class="contact-items">
-                            <div class="text-input">
-                                <input type="text" name="name" placeholder="Enter your name:" required>
-                            </div>
+                            <div class="contact-items-1">
+                                <div class="text-input">
+                                    <input type="text" name="name" placeholder="Enter your name:" required>
+                                </div>
 
-                            <div class="text-input">
-                                <input type="email" name="email" placeholder="Enter your email:" required>
+                                <div class="text-input">
+                                    <input type="email" name="email" placeholder="Enter your email:" required>
+                                </div>
                             </div>
+                            <div class="contact-items-1">
+                                <div class="text-input">
+                                    <input type="text" name="subject" placeholder="Enter your subject:" required>
+                                </div>
 
-                            <div class="text-input">
-                                <input type="text" name="subject" placeholder="Enter your subject:" required>
+                                <div class="contact-select">
+                                    <select name="type" required>
+                                        <option selected value="Why">Reason for contact:</option>
+                                        <option value="Question">Question</option>
+                                        <option value="Feedback">Feedback</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
                             </div>
-
-                            <div class="contact-select">
-                                <select name="type" required>
-                                    <option selected value="Why">Reason for contact:</option>
-                                    <option value="Question">Question</option>
-                                    <option value="Feedback">Feedback</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-
                             <div class="contact-message">
                                 <textarea name="message" placeholder="Write your message:" required></textarea>
                             </div>

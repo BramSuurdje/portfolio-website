@@ -83,7 +83,7 @@
                         </div>
                         <div class="project-buttons">
                             <a class="button" href="#">More Details</a>
-                            <a class="button" href="#">Live Demo</a>
+                            <a class="button" href="https://project-circle-solutions.vercel.app/" target="_blank">Live Demo</a>
                         </div>
                     </div>
                     <div class="grid-item">

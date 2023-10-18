@@ -48,5 +48,7 @@
     $mijl = ktm($kilometer);
     echo "<p>$kilometer km/u is $mijl mph.</p>"
     ?>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>

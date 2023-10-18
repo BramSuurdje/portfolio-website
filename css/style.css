@@ -16,6 +16,10 @@
 	--title-color-1: #713ABE;
 }
 
+body {
+	font-family: 'Poppins', 'Arial';
+}
+
 html {
 	background-color: var(--background-1);
 	color: var(--text-color-1);
@@ -234,15 +238,15 @@ html {
 .placeholder-image {
 	background: linear-gradient(135deg, rgba(237,242,244,1) 0%, rgba(141,153,174,1) 95%);
 	height: 15rem;
-	width: 1fr;
+	width: 400px;
 	min-width: 25rem;
 }
 .placeholder-image img {
-	width: 400px;
+	width: 100%;
 	height: 100%;
 	max-width: 28rem;
 	overflow: hidden;
-	object-fit:cover;
+	object-fit: cover;
 	justify-content: center;
 }
 .grid-item a {
@@ -274,7 +278,15 @@ html {
 	padding:0.5rem 2rem;
 	text-transform: uppercase;
 	transition: 0.3s;
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
+
+.project-buttons .button i {
+	font-size: 1.2rem;
+}
+
 .project-buttons .button:hover {
 	background-color: var(--title-color-1);
 	color: var(--text-color-1);
@@ -420,6 +432,52 @@ html {
 	color: var(--text-color-1);
 	text-align: center;
 }
+
+.oprachten-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 125px;
+}
+.opdrachten-list-items {
+	width: 100%;
+	gap: 1.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.opdrachten-list-title {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.opdrachten-list-item {
+	background-color: var(--title-color-1);
+	color: var(--text-color-1);
+	width: 100%;
+	text-align: center;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-weight: bold;
+	font-size: 1.5rem;
+	border-radius: 100px;
+	padding-left: 25px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	transition: 0.2s;
+}
+
+.opdrachten-list-item:hover {
+	background-color: var(--text-color-1);
+	color: var(--title-color-1);
+}
+
 @media only screen and (max-width: 600px) {
 	.container {
 		padding: 0 2rem;

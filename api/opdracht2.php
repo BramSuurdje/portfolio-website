@@ -130,5 +130,7 @@ functionTesting()
 ?>
 <!-- je kan een variable die je aanmaakt in een functie niet gebruiken buiten de functie -->
 
+    <script src="/js/index.js"></script>
+
 </body>
 </html>

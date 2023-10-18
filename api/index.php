@@ -82,8 +82,8 @@
                             <a href="">Project Cirle-Solutions</a>
                         </div>
                         <div class="project-buttons">
-                            <a class="button" href="#">More Details</a>
-                            <a class="button" href="https://project-circle-solutions.vercel.app/" target="_blank">Live Demo</a>
+                            <a class="button" href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">Github Repo <i class='bx bxl-github'></i></a>
+                            <a class="button" href="https://circlesolutions.bramsuurd.nl/" target="_blank">Live Demo</a>
                         </div>
                     </div>
                     <div class="grid-item">
@@ -94,7 +94,7 @@
                             <a href="">Project</a>
                         </div>
                         <div class="project-buttons">
-                            <a class="button" href="#">More Details</a>
+                            <a class="button" href="#">Github Repo <i class='bx bxl-github'></i></a>
                             <a class="button" href="#">Live Demo</a>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                             <a href="">Project</a>
                         </div>
                         <div class="project-buttons">
-                            <a class="button" href="#">More Details</a>
+                            <a class="button" href="#">Github Repo <i class='bx bxl-github'></i></a>
                             <a class="button" href="#">Live Demo</a>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                             <a href="">Project</a>
                         </div>
                         <div class="project-buttons">
-                            <a class="button" href="#">More Details</a>
+                            <a class="button" href="#">Github Repo <i class='bx bxl-github'></i></a>
                             <a class="button" href="#">Live Demo</a>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
         </div>
     </section>
 
-    <section id="opdracht" class="opdracht">
+    <section id="opdracht" class="opdracht" >
         <div class="opdracht-container">
             <div class="opdracht-content">
                 <div class="opdracht-text">
@@ -219,8 +219,9 @@
         </div>
     </section>
 
-    <?php include("footer.php") ?>
-
+    <?php include("footer.php"); ?>
+    
+    <script src="/js/index.js"></script>
 </body>
 
 </html>

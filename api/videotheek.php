@@ -64,5 +64,7 @@ $recentBezocht = true;
 controleerAanmelding($leeftijd, $geslacht, $recentBezocht);
 
     ?>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>

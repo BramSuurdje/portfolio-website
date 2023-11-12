@@ -13,12 +13,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram's Portfolio</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
                         </span>
                     </div>
                     <div class="hero-img">
-                        <img src="../img/undraw_programming_re_kg9v.svg" alt="guy programming">
+                        <img src="/img/undraw_programming_re_kg9v.svg" alt="guy programming">
                     </div>
 
                 </div>
@@ -53,7 +53,7 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-img">
-                    <img src="../img/undraw_code_inspection_bdl7.svg" alt="About me">
+                    <img src="/img/undraw_code_inspection_bdl7.svg" alt="About me">
                 </div>
                 <div class="about-text">
                     <h3>About me</h3>
@@ -76,7 +76,7 @@
                 <div class="projects-grid">
                     <div class="grid-item">
                         <div class="placeholder-image">
-                            <img src="../img/Cirle-Solutions.png" loading="lazy" alt="">
+                            <img src="/img/Cirle-Solutions.png" loading="lazy" alt="">
                         </div>
                         <div class="project-text">
                             <a href="">Project Cirle-Solutions</a>
@@ -124,13 +124,13 @@
                     </div>
                     <div class="grid-item">
                         <div class="placeholder-image">
-                            <img src="../img/DVD-Video_Logo.svg.png" loading="lazy" alt="">
+                            <img src="/img/DVD-Video_Logo.svg.png" loading="lazy" alt="">
                         </div>
                         <div class="project-text">
                             <a href="">Videotheek</a>
                         </div>
                         <div class="project-buttons">
-                            <a class="button" href="/api/videotheek.php">More Details</a>
+                            <a class="button" href="/videotheek.php">More Details</a>
                         </div>
                     </div>
                 </div>

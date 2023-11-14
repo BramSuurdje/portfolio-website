@@ -71,74 +71,52 @@
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="projects-content">
-                <p>portfolio</p>
-                <h3>Here are all the projects that i've done</h3>
-                <div class="projects-grid">
-                    <div class="grid-item">
-                        <div class="placeholder-image">
-                            <img src="/img/Cirle-Solutions.png" loading="lazy" alt="">
-                        </div>
-                        <div class="project-text">
-                            <a href="">Project Cirle-Solutions</a>
-                        </div>
-                        <div class="project-buttons">
-                            <a class="button" href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">Github Repo <i class='bx bxl-github'></i></a>
-                            <a class="button" href="https://circlesolutions.bramsuurd.nl/" target="_blank">Live Demo</a>
-                        </div>
+    <section id="projects" class=" container">
+        <div class="projects-title">
+            <h3>Projects</h3>
+        </div>
+        <div class="project-content">
+            <div class="project-item">
+                <div class="project-img">
+                    <a href="https://circlesolutions.bramsuurd.nl" target="_blank"><img src="/img/pika-1699989569943-1x.png" alt=""></a>
+                </div>
+                <div class="project-info">
+                    <h3>CircleSolutions</h3>
+                    <h4>NHL Stenden periode 1 project</h4>
+                    <p>In this project, we had to create a website for a company called "CircleSolutions." This company creates intranets and needed a new website to attract new customers.</p>
+                    <div class="project-buttons">
+                        <a href="https://circlesolutions.bramsuurd.nl" target="_blank">Check out website <i class='bx bx-link-external'></i></a>
+                        <a href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">View Code <i class='bx bx-link-external'></i></a>
                     </div>
-                    <div class="grid-item">
-                        <div class="placeholder-image">
-                            <!-- <img src="" loading="lazy" alt=""> -->
-                        </div>
-                        <div class="project-text">
-                            <a href="">Project</a>
-                        </div>
-                        <div class="project-buttons">
-                            <a class="button" href="#">Github Repo <i class='bx bxl-github'></i></a>
-                            <a class="button" href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="placeholder-image">
-                            <!-- <img src="" loading="lazy" alt=""> -->
-                        </div>
-                        <div class="project-text">
-                            <a href="">Project</a>
-                        </div>
-                        <div class="project-buttons">
-                            <a class="button" href="#">Github Repo <i class='bx bxl-github'></i></a>
-                            <a class="button" href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="placeholder-image">
-                            <!-- <img src="" loading="lazy" alt=""> -->
-                        </div>
-                        <div class="project-text">
-                            <a href="">Project</a>
-                        </div>
-                        <div class="project-buttons">
-                            <a class="button" href="#">Github Repo <i class='bx bxl-github'></i></a>
-                            <a class="button" href="#">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="placeholder-image">
-                            <img src="/img/DVD-Video_Logo.svg.png" loading="lazy" alt="">
-                        </div>
-                        <div class="project-text">
-                            <a href="">Videotheek</a>
-                        </div>
-                        <div class="project-buttons">
-                            <a class="button" href="/videotheek.php">More Details</a>
-                        </div>
-                    </div>
+                    <h5>Used languages</h5>
+                    <div class="project-languages">
+                        <i class='bx bxl-html5' ></i>
+                        <i class='bx bxl-css3' ></i>
+                        <i class='bx bxl-php' ></i>
+                        <i class='bx bxl-javascript' ></i>
                 </div>
             </div>
         </div>
+        <!-- <div class="project-right project-item">
+            <div class="project-img">
+                <a href="https://circlesolutions.bramsuurd.nl" target="_blank"><img src="/img/pika-1699989569943-1x.png" alt=""></a>
+            </div>
+            <div class="project-info project-info-right">
+                <h3>CircleSolutions</h3>
+                <h4>NHL Stenden periode 1 project</h4>
+                <p>In dit project moesten we een website maken voor het bedrijf genaamt "CircleSolutions" dit bedrijf maakt intranetten en had een nieuwe website nodig om nieuwe klanten aan te trekken</p>
+                <div class="project-buttons">
+                    <a href="https://circlesolutions.bramsuurd.nl" target="_blank">Bekijk project <i class='bx bx-link-external'></i></a>
+                    <a href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">Bekijk Code <i class='bx bx-link-external'></i></a>
+                </div>
+                <h5>Gebruikte talen</h5>
+                <div class="project-languages">
+                    <i class='bx bxl-html5' ></i>
+                    <i class='bx bxl-css3' ></i>
+                    <i class='bx bxl-php' ></i>
+                    <i class='bx bxl-javascript' ></i>
+            </div>
+        </div> -->
     </section>
 
     <section id="contact" class="contact">

@@ -192,103 +192,132 @@ a {
 }
 #projects {
 	padding: 15rem 0;
-}
-.projects-content {
 	display: flex;
 	flex-direction: column;
 }
-.projects-content p {
-	color: var(--title-color-1);
+
+.projects-title h3 {
 	font-size: 1.3rem;
 	font-weight: 700;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	text-transform: uppercase;
+	color: var(--title-color-1);
 }
-.projects-content h3 {
-	color: var(--text-color-1);
-	font-size: 2.1rem;
-	margin-bottom: 6rem;
-}
-.project-text a {
-	color: var(--text-color-1);
-	font-size: 1rem;
-	margin-bottom: 6rem;
-	font-weight: 600;
-}
-.project-text {
-	padding-top: 5px;
-}
-.projects-grid {
+
+.project-content {
+	gap: 10rem;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 3rem;
-	justify-content: center;
+	flex-direction: column;
 }
-.grid-item {
-	display: block;
-	text-align: center;
-	place-self: center;
-	object-fit: fill;
-	overflow: hidden;
+.project-item {
+	display: flex;
+	gap: 2rem;
 }
-.placeholder-image {
-	background: linear-gradient(135deg, rgba(237,242,244,1) 0%, rgba(141,153,174,1) 95%);
-	height: 15rem;
-	width: 400px;
-	min-width: 25rem;
+
+.project-img {
+	width: 50%;
 }
-.placeholder-image img {
+
+.project-img img {
 	width: 100%;
-	height: 100%;
-	max-width: 28rem;
-	overflow: hidden;
-	object-fit: cover;
-	justify-content: center;
+	transition: 0.3s;
 }
-.grid-item a {
-	font-size: 1.2rem;
+
+.project-img img:hover {
+	transform: scale(1.05);
 }
+
+.project-info {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+.project-info-right {
+	align-items: flex-end;
+}
+
+.project-info p {
+	font-size: 16px;
+}
+
 .project-buttons {
 	display: flex;
-	justify-content: center;
-	padding-top: 5px;
+	gap: 1rem;
+	margin-top: 2.2rem;
 }
-.grid-item p {
-	font-size: 0.9rem;
+
+.project-info a {
 	color: var(--text-color-1);
-	text-transform: none;
-}
-.project-text {
-	font-weight: bold;
-}
-.project-buttons .button {
-	border-width: 2px;
-	border-color: var(--text-color-1);
+	background-color: var(--background-2);
 	border-radius: 1rem;
-	border-style: solid;
-	color: var(--text-color-1);
-	cursor: pointer;
-	font-size: 1rem;
-	font-weight: bold;
-	margin: 0 1rem;
-	padding:0.5rem 2rem;
-	text-transform: uppercase;
+	width: inherit;
+	padding: 0.8rem 4rem;
 	transition: 0.3s;
-	display: flex;
-	align-items: center;
-	gap: 5px;
 }
 
-.project-buttons .button i {
-	font-size: 1.2rem;
-}
-
-.project-buttons .button:hover {
+.project-info a:hover {
 	background-color: var(--title-color-1);
-	color: var(--text-color-1);
-	border-color: var(--title-color-1);
+	scale: 1.05;
 }
+
+.project-info h3 {
+	font-size: 1.3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.project-info h4 {
+	font-size: 2.1rem;
+	margin-bottom: 2rem;
+
+}
+
+.project-info h5 {
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-top: 3.5rem;
+}
+
+.project-languages {
+	display: flex;
+	gap: 1rem;
+	font-size: 50px;
+	margin-top: auto;
+	margin-bottom: 1rem;
+}
+
+.project-languages i {
+	color: var(--text-color-1);
+	transition: 0.2s;
+}
+
+.project-languages i:hover {
+	scale: 1.1;
+}
+
+.project-languages :nth-child(1):hover {
+	color: #FF0000;
+}
+
+.project-languages :nth-child(2):hover {
+	color: #264de4;
+}
+
+.project-languages :nth-child(3):hover {
+	color: #484C89;
+}
+
+.project-languages :nth-child(4):hover {
+	color: #F7DF1E;
+}
+
+
+.project-right {
+	flex-direction: row-reverse;
+}
+
 #contact {
 	background-color: var(--background-2);
 	padding: 15rem 0;

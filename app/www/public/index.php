@@ -19,11 +19,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/smoothscroll.js" defer></script>
 </head>
 
 <body>
 
-    <?php include("header.php"); ?>
+    <?php include("components/header.php"); ?>
 
     <section id="home" class="hero">
         <div class="container hero-background">
@@ -41,7 +43,7 @@
                         </span>
                     </div>
                     <div class="hero-img">
-                        <img src="/img/undraw_programming_re_kg9v.svg" alt="guy programming">
+                        <img class="hero-img-img" src="/img/undraw_programming_re_kg9v.svg" alt="guy programming">
                     </div>
 
                 </div>
@@ -145,7 +147,7 @@
                     <div class="contact-text">
                         <p>contact</p>
                     </div>
-                    <form action="contact.php" method="post" class="contact-form">
+                    <form action="contact-confirm.php" method="post" class="contact-form">
                         <div class="contact-items">
                             <div class="contact-items-1">
                                 <div class="text-input">
@@ -219,9 +221,6 @@
         </div>
     </section>
 
-    <?php include("footer.php"); ?>
-    
-    <script src="/js/index.js"></script>
+    <?php include("components/footer.php"); ?>
 </body>
-
 </html>

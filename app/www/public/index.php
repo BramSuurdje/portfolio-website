@@ -21,6 +21,7 @@
     <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/smoothscroll.js" defer></script>
+    <meta name="theme-color" content="#222435">
 </head>
 
 <body>

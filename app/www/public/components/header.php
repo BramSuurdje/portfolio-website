@@ -1,16 +1,17 @@
+<link rel="stylesheet" href="header.css">
 <header>
     <nav class="header-container">
         <div class="header-logo">
-            <a href="/index.php#home">bram</a>
+            <a href="/#home">bram</a>
         </div>
         <div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="/index.php#home">Home</a></li>
-                <li class="nav-item"><a href="/index.php#about">About</a></li>
-                <li class="nav-item"><a href="/index.php#projects">Projects</a></li>
-                <li class="nav-item"><a href="/index.php#contact">Contact</a></li>
-                <li class="nav-item"><a href="/opdrachten.php">Opdrachten</a></li>
-                <li class="nav-item"><a href="/opdracht.php">PHP</a></li>
+                <li class="nav-item"><a href="/#home">Home</a></li>
+                <li class="nav-item"><a href="/#about">About</a></li>
+                <li class="nav-item"><a href="/#projects">Projects</a></li>
+                <li class="nav-item"><a href="/#contact">Contact</a></li>
+                <li class="nav-item"><a href="/opdrachten">Opdrachten</a></li>
+                <!-- <li class="nav-item"><a href="/opdracht.php">PHP</a></li> -->
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>

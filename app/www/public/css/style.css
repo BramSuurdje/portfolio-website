@@ -12,7 +12,7 @@
 	--background-2: #222435;
 	--text-color-1: #edf2f4;
 	--text-color-2: #8d99ae;
-	--title-color-1: #713ABE;
+	--title-color-1: #5E5DF0;
 }
 
 body {
@@ -240,6 +240,7 @@ a {
 
 .project-info p {
 	font-size: 16px;
+	font-weight: 400;
 }
 
 .project-buttons {
@@ -445,7 +446,7 @@ a {
 	justify-content: center;
 }
 #footer {
-	background-color: var(--background-2);
+	background-color: var(--background-1);
 	padding: 25px 50px;
 	box-shadow: 0 0 10px rgba(0,0,0,.09);
 	display: flex;
@@ -533,6 +534,15 @@ a {
 	.contact-items-1 {
 		flex-direction: column;
 	}
+	.project-item {
+		flex-direction: column;
+		margin-left: 30px;
+		justify-content: center;
+		align-items: center;
+	}
+	.contact-content {
+		padding: 0 20px
+	}
 }
 
 .confirm-message {
@@ -593,3 +603,39 @@ a {
 	}
 
 }
+.success-text {
+	text-align: center;
+	max-width: 1280px;
+}
+
+.success-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	flex-direction: column;
+}
+
+.success-button {
+		background: var(--title-color-1);
+		border-radius: 999px;
+		box-shadow: var(--title-color-1) 0 10px 20px -10px;
+		box-sizing: border-box;
+		color: #FFFFFF;
+		cursor: pointer;
+		font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px;
+		opacity: 1;
+		outline: 0 solid transparent;
+		padding: 8px 18px;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		width: fit-content;
+		word-break: break-word;
+		border: 0;
+		margin-top: 10px;;
+	}

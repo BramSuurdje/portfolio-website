@@ -66,7 +66,7 @@
       <form action="" method="post" enctype="multipart/form-data">
         <input type="file" name="fileToUpload" id="fileToUpload" accept="image/jpeg, image/jpg, image/png, image/gif">
         <input type="submit" class="success-button" value="Submit">
-        <a href="overzicht.php" class="success-button">Alle Bestanden </a>
+        <a href="/upload/overzicht.php" class="success-button">Alle Bestanden </a>
       </form>
     </div>
   </main>

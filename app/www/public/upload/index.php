@@ -69,6 +69,7 @@
         <a href="/upload/overzicht.php" class="success-button">Alle Bestanden </a>
       </form>
     </div>
+    
   </main>
 
   <?php include('../components/footer.php'); ?>

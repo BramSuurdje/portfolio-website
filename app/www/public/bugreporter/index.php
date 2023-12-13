@@ -21,7 +21,6 @@ try {
   if (!$databaseExists) {
     $createDatabase = $conn->query('CREATE DATABASE bugs');
   }
-$sql = '';
   $tableCheck = $conn->query('SHOW TABLES LIKE "bugreporter"');
   $tableExists = $tableCheck->rowCount() > 0;
   if (!$tableExists) {
@@ -40,7 +39,7 @@ $sql = '';
     echo "";
   }
 } catch(PDOException $e) {
-  echo $sql . '<br>' . $e->getMessage();
+  echo $e->getMessage();
 }
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

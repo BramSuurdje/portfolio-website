@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-$servername = 'localhost';
+$servername = 'mysql';
 $username = 'root';
 $password = 'qwerty';
 $dbname = 'bugs';

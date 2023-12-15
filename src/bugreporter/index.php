@@ -29,7 +29,6 @@ try {
       solution VARCHAR(255)
     )';
     $conn->exec($sql);
-    echo 'Table bugreporter created successfully';
   } else {
     echo "";
   }
@@ -37,8 +36,7 @@ try {
   echo $e->getMessage();
 }
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  include('../db-connect.php');
   // Fetch data from the 'bugreporter' table
   $stmt = $conn->query('SELECT bug_id, productname, `version`, hardware_type, os, frequency, solution FROM bugreporter');
   $bugReports = $stmt->fetchAll(PDO::FETCH_ASSOC);

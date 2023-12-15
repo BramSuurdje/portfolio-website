@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="header.css">
-<header>
-    <nav class="header-container">
+<nav>
+    <div class="header-container">
         <div class="header-logo">
             <a href="/#home">bram</a>
         </div>
@@ -19,6 +18,7 @@
                 <span class="bar"></span>
             </div>
         </div>
-    </nav>
-</header>
+    </div>
+</nav>
+
 <script src="/js/script.js"></script>

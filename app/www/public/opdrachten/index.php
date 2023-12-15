@@ -4,7 +4,7 @@
     <?php include("../metadata.php") ?>
 </head>
 <body>
-
+    <?php header('location: /') ?>
     <?php include("../components/header.php"); ?>
 
     <div class="oprachten-list container">

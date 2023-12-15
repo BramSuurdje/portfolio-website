@@ -10,13 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Insert data into the database
   try {
-    $servername = 'localhost';
-    $username = 'root';
-    $password = 'qwerty';
-    $dbname = 'bugs';
-
-      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      require_once('../db-connect.php');
 
       // Prepare the SQL statement for insertion
       $stmt = $conn->prepare('INSERT INTO bugreporter (productname, version, hardware_type, os, frequency, solution) VALUES (:productname, :version, :hardware_type, :os, :frequency, :solution)');
@@ -62,5 +56,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div><button class="success-button" type="submit">Submit</button></div>
     </form>
   </div>
+
+    <form method="post"></form>
 </body>
 </html>
+
+

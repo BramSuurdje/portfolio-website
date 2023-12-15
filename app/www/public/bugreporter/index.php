@@ -7,13 +7,8 @@
 </head>
 <body>
 <?php
-$servername = 'mysql';
-$username = 'root';
-$password = 'qwerty';
-$dbname = 'bugs';
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  require_once('../db-connect.php');
   
   $databaseCheck = $conn->query('SHOW DATABASES LIKE "bugs"');
   $databaseExists = $databaseCheck->rowCount() > 0;
@@ -44,7 +39,6 @@ try {
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
   // Fetch data from the 'bugreporter' table
   $stmt = $conn->query('SELECT bug_id, productname, `version`, hardware_type, os, frequency, solution FROM bugreporter');
   $bugReports = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -71,7 +65,7 @@ try {
     }
     echo '</table>';
   } else {
-    echo 'No records found';
+    echo 'No records found <br>';
   }
   echo '<a href="/bugreporter/new_bug_form.php">Add Bug</a>';
 

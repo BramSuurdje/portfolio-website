@@ -1,11 +1,5 @@
 <?php
-  $servername = 'localhost';
-  $username = 'bram';
-  $password = '123';
-  $dbname = 'bugs';
-  
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+require_once('../db-connect.php');
 
 // Check if the ID parameter is set in the URL
 if (isset($_GET['id'])) {

@@ -1,11 +1,5 @@
 <?php
-$servername = 'localhost';
-$username = 'root';
-$password = 'qwerty';
-$dbname = 'bugs';
-
-$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+require_once('../db-connect.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['remove'])) { // Check if Remove button is clicked

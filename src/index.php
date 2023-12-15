@@ -102,7 +102,7 @@
                     <div class="contact-text">
                         <p>contact</p>
                     </div>
-                    <form action="/contact" method="post" class="contact-form">
+                    <form action="/contact/index.php" method="post" class="contact-form">
                         <div class="contact-items">
                             <div class="contact-items-1">
                                 <div class="text-input">

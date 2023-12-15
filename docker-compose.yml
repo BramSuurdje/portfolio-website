@@ -11,7 +11,7 @@ services:
       - db
 
   db:
-    image: mysql:5.7
+    image: mariadb:latest
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: qwerty

@@ -2,18 +2,20 @@ version: '3.1'
 
 services:
   web:
-    image: php:8.1-apache
+    build:
+      context: .
+      dockerfile: apache2.Dockerfile
     ports:
       - "85:80"
     volumes:
       - ./src:/var/www/html
     depends_on:
-      - custom_db  # Renamed db service to custom_db
+      - custom_db
 
-  custom_db:  # Renamed db service to custom_db
+  custom_db:
     build:
       context: .
-      dockerfile: database.Dockerfile  # Use your specific Dockerfile name
+      dockerfile: database.Dockerfile
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: qwerty

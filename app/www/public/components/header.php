@@ -1,5 +1,5 @@
 <nav>
-    <div class="header-container">
+    <div class="header-container glass">
         <div class="header-logo">
             <a href="/#home">bram</a>
         </div>

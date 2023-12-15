@@ -8,7 +8,7 @@
 <body>
 <?php
 try {
-  require_once('../db-connect.php');
+  include('../db-connect.php');
   
   $databaseCheck = $conn->query('SHOW DATABASES LIKE "bugs"');
   $databaseExists = $databaseCheck->rowCount() > 0;

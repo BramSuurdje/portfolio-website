@@ -1,5 +1,5 @@
 <?php
-require_once('../db-connect.php');
+include('../db-connect.php');
 
 // Check if the ID parameter is set in the URL
 if (isset($_GET['id'])) {

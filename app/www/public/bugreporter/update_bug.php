@@ -1,5 +1,5 @@
 <?php
-require_once('../db-connect.php');
+include('../db-connect.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['remove'])) { // Check if Remove button is clicked

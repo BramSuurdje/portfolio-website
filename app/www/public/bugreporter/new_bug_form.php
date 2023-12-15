@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Insert data into the database
   try {
-      require_once('../db-connect.php');
+      include('../db-connect.php');
 
       // Prepare the SQL statement for insertion
       $stmt = $conn->prepare('INSERT INTO bugreporter (productname, version, hardware_type, os, frequency, solution) VALUES (:productname, :version, :hardware_type, :os, :frequency, :solution)');

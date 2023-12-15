@@ -2,8 +2,7 @@
 $username = 'root';
 $password = 'qwerty';
 $dbname = 'bugs';
-$charset = 'utf8mb4';
-$dsn = 'mysql:host=mysql;dbname=$dbname;charset=$charset';
+$dsn = "mysql:host=mysql;dbname=$dbname";
 try {
   $conn = new PDO($dsn, $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

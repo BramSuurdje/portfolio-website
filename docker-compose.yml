@@ -17,7 +17,7 @@ services:
       MARIADB_ROOT_PASSWORD: qwerty
       MARIADB_DATABASE: bugs
     volumes:
-      - db_data_portfolio:/var/lib/mysql:Z
+      - db_data_portfolio:/var/lib/mysql
 
 volumes:
   db_data_portfolio:

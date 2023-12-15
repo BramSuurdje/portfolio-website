@@ -13,7 +13,6 @@
                 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
                 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
                 $reason = $_POST['reason'];
-                $newsletter = $_POST['newsletter'];
                 $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_SPECIAL_CHARS);
                 $hasError = false;
                 if (empty($name))
@@ -41,6 +40,8 @@
                 {
                     echo "<br><p class='success-text'> i also want to thank you for subscribing to the newsletter!</p>";
                 }
+                } else {
+                    header("Location: /");
                 }
             }
         ?>

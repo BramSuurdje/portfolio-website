@@ -131,11 +131,11 @@
                                 <textarea name="message" placeholder="Write your message:" required></textarea>
                             </div>
                         </div>
-                        <div class="contact-newsletter">
+                        <!-- <div class="contact-newsletter">
                             <label for="contact-newsletter">Subscribe to Newsletter:</label>
                             <input type="radio" name="newsletter" value="Yes" checked> Yes
                             <input type="radio" name="newsletter" value="No"> No
-                        </div>
+                        </div> -->
                         <div class="contact-buttons">
                             <input class="contact-button" type="submit" value="Submit">
                         </div>

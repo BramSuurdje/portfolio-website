@@ -8,10 +8,12 @@ services:
     volumes:
       - ./src:/var/www/html
     depends_on:
-      - db
+      - custom_db  # Renamed db service to custom_db
 
-  db:
-    image: mariadb:latest
+  custom_db:  # Renamed db service to custom_db
+    build:
+      context: .
+      dockerfile: database.Dockerfile  # Use your specific Dockerfile name
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: qwerty

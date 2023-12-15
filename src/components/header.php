@@ -9,7 +9,7 @@
                 <li class="nav-item"><a href="/#about">About</a></li>
                 <li class="nav-item"><a href="/#projects">Projects</a></li>
                 <li class="nav-item"><a href="/#contact">Contact</a></li>
-                <li class="nav-item"><a href="/opdrachten">Opdrachten</a></li>
+                <!-- <li class="nav-item"><a href="/opdrachten">Opdrachten</a></li> -->
                 <!-- <li class="nav-item"><a href="/opdracht.php">PHP</a></li> -->
             </ul>
             <div class="hamburger">

@@ -8,21 +8,19 @@
 
     <section id="home" class="hero hero-background">
     <?php include("components/header.php"); ?>
-        <div class="container">
+        <div class="hero-center">
             <div class="hero-content">
-                <div class="hero-main">
-                    <div class="hero-text">
-                        <h1>Hi, I'm <b>Bram Suurd</b></h1>
-                        <p>Currently studying <i>Information Technology</i> at <a target="_blank" href="https://www.nhlstenden.com/en/courses/information-technology"><b>NHL Stenden <i class='bx bx-link-external'></i></b></a></p>
-                        <span>
-                            <a target="_blank" href="https://github.com/BramSuurdje"><i class='bx bxl-github'></i></a> 
-                            <a target="_blank" href="https://www.linkedin.com/in/bramsuurd/"><i class='bx bxl-linkedin-square'></i></a>
-                            <a target="_blank" href="https://wa.me/+310621621560"><i class='bx bxl-whatsapp'></i></a>
-                        </span>
-                    </div>
-                    <div class="hero-img">
-                        <img class="hero-img-img" src="/img/undraw_programming_re_kg9v.svg" alt="guy programming">
-                    </div>
+                <div class="hero-text">
+                    <h1>Hi, I'm <b>Bram Suurd</b></h1>
+                    <p>Currently studying <i>Information Technology</i> at <a target="_blank" href="https://www.nhlstenden.com/en/courses/information-technology"><b>NHL Stenden <i class='bx bx-link-external'></i></b></a></p>
+                    <span>
+                        <a target="_blank" href="https://github.com/BramSuurdje"><i class='bx bxl-github'></i></a> 
+                        <a target="_blank" href="https://www.linkedin.com/in/bramsuurd/"><i class='bx bxl-linkedin-square'></i></a>
+                        <a target="_blank" href="https://wa.me/+310621621560"><i class='bx bxl-whatsapp'></i></a>
+                    </span>
+                </div>
+                <div class="hero-img">
+                    <img class="hero-img-img" src="/img/undraw_programming_re_kg9v.svg" alt="guy programming">
                 </div>
             </div>
         </div>

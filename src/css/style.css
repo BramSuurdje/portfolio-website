@@ -70,6 +70,13 @@ a {
 	border-radius: 50px;
 	margin: 1rem 1rem;
 }
+.header-contact a {
+	background-color: var(--title-color-1);
+	padding: 5px 20px;
+	border-radius: 15px;
+	transition: 0.3s;
+	font-weight: bold;
+}
 nav {
 	display: flex;
 	align-items: center;
@@ -79,6 +86,11 @@ nav {
 .hero-background {
 	background-image: url(/img/header-background.png);
 }
+
+.header-logo {
+	display: flex;
+	align-items: center;
+}
 .header-logo a {
 	font-weight: 700;
 	font-size: 1.20em;
@@ -86,18 +98,37 @@ nav {
 }
 .nav-menu {
 	display: flex;
+	align-items: center;
+}
+
+.nav-menu ul {
+	display: flex;
+	align-items: center;
+	gap: 1rem;	
 }
 .nav-item {
 	padding: 0 10px;
 	font-weight: 600;
 }
-.header-container a {
+.nav-item a {
 	color: var(--text-color-1);
 	transition: 0.2s;
 }
 .header-container a:hover {
 	color: var(--text-color-2);
 	text-decoration: underline;
+}
+
+.header-contact a:hover {
+	text-decoration: none;
+	color: var(--text-color-1);
+	scale: 1.05;
+	transition: 0.3s
+}
+
+.header-contact {
+	display: flex;
+	align-items: center;
 }
 #home {
 	/* display: flex; */

@@ -731,3 +731,9 @@ nav {
 	.success-button:hover, .remove-button:hover {
 		scale: 1.05;
 	}
+
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}

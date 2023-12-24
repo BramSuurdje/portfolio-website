@@ -6,5 +6,5 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="js/smoothscroll.js" defer></script>
 <meta name="theme-color" content="#222435">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css?id=1234">
 <script src="https://cdn.tailwindcss.com"></script>

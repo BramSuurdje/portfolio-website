@@ -29,71 +29,75 @@
     </section>
 
     <section id="about" class="about">
-        <div class="about-content">
-            <div class="about-img">
-                <img src="/img/undraw_code_inspection_bdl7.svg" alt="About me">
-            </div>
-            <div class="about-text">
-                <h3>About me</h3>
-                <h4>An Information Technology Student
-                    <br>
-                    based in <a target="_blank" href="https://maps.app.goo.gl/o6vtFYk4X2Q7PLrD9">Emmen,The Netherlands <i class='bx bx-link-external'></i></a>
-                </h4>
-                <p>I live in the Netherlands, and I'm currently a student at <a href="https://nhlstenden.com/en" target="_blank">NHL Stenden <i class='bx bx-link-external'></i></a> in Emmen, where I'm studying Information Technology. What drew me to programming is the incredible potential it holds for creating and innovating. The world of coding offers boundless opportunities to bring new ideas to life.
-                    <span><br><br>Before coming to NHL Stenden, I was a student at <a href="https://www.drenthecollege.nl/english " target="_blank">Drenthe College <i class='bx bx-link-external'></i></a> in Emmen, where I studied "Expert IT System and Devices." This earlier experience provided me with a good foundation in technology. Now, at NHL Stenden, I'm excited to learn more and explore the world of Information Technology in greater depth.</span>
-                </p>
+        <div class="about-wrapper">
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="/img/undraw_code_inspection_bdl7.svg" alt="About me">
+                </div>
+                <div class="about-text">
+                    <h3>About me</h3>
+                    <h4>An Information Technology Student
+                        <br>
+                        based in <a target="_blank" href="https://maps.app.goo.gl/o6vtFYk4X2Q7PLrD9">Emmen,The Netherlands <i class='bx bx-link-external'></i></a>
+                    </h4>
+                    <p>I live in the Netherlands, and I'm currently a student at <a href="https://nhlstenden.com/en" target="_blank">NHL Stenden <i class='bx bx-link-external'></i></a> in Emmen, where I'm studying Information Technology. What drew me to programming is the incredible potential it holds for creating and innovating. The world of coding offers boundless opportunities to bring new ideas to life.
+                        <span><br><br>Before coming to NHL Stenden, I was a student at <a href="https://www.drenthecollege.nl/english " target="_blank">Drenthe College <i class='bx bx-link-external'></i></a> in Emmen, where I studied "Expert IT System and Devices." This earlier experience provided me with a good foundation in technology. Now, at NHL Stenden, I'm excited to learn more and explore the world of Information Technology in greater depth.</span>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <div class="projects-wrapper">
-            <div class="projects-title">
-                <h3>Projects</h3>
-            </div>
-            <div class="project-content">
-                <div class="project-item">
+        <div class="project-center">
+            <div class="projects-wrapper">
+                <div class="projects-title">
+                    <h3>Projects</h3>
+                </div>
+                <div class="project-content">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <a href="https://circlesolutions.bramsuurd.nl" target="_blank"><img src="/img/pika-1699989569943-1x.png" alt=""></a>
+                        </div>
+                        <div class="project-info">
+                            <h3>CircleSolutions</h3>
+                            <h4>NHL Stenden periode 1 project</h4>
+                            <p>In this project, we had to create a website for a company called "CircleSolutions." This company creates intranets and needed a new website to attract new customers.</p>
+                            <div class="project-buttons">
+                                <a href="https://circlesolutions.bramsuurd.nl" target="_blank">Check out website <i class='bx bx-link-external'></i></a>
+                                <a href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">View Code <i class='bx bx-link-external'></i></a>
+                            </div>
+                            <h5>Used languages</h5>
+                            <div class="project-languages">
+                                <i class='bx bxl-html5'></i>
+                                <i class='bx bxl-css3'></i>
+                                <i class='bx bxl-php'></i>
+                                <i class='bx bxl-javascript'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="project-right project-item">
                     <div class="project-img">
                         <a href="https://circlesolutions.bramsuurd.nl" target="_blank"><img src="/img/pika-1699989569943-1x.png" alt=""></a>
                     </div>
-                    <div class="project-info">
+                    <div class="project-info project-info-right">
                         <h3>CircleSolutions</h3>
                         <h4>NHL Stenden periode 1 project</h4>
-                        <p>In this project, we had to create a website for a company called "CircleSolutions." This company creates intranets and needed a new website to attract new customers.</p>
+                        <p>In dit project moesten we een website maken voor het bedrijf genaamt "CircleSolutions" dit bedrijf maakt intranetten en had een nieuwe website nodig om nieuwe klanten aan te trekken</p>
                         <div class="project-buttons">
-                            <a href="https://circlesolutions.bramsuurd.nl" target="_blank">Check out website <i class='bx bx-link-external'></i></a>
-                            <a href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">View Code <i class='bx bx-link-external'></i></a>
+                            <a href="https://circlesolutions.bramsuurd.nl" target="_blank">Bekijk project <i class='bx bx-link-external'></i></a>
+                            <a href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">Bekijk Code <i class='bx bx-link-external'></i></a>
                         </div>
-                        <h5>Used languages</h5>
+                        <h5>Gebruikte talen</h5>
                         <div class="project-languages">
-                            <i class='bx bxl-html5'></i>
-                            <i class='bx bxl-css3'></i>
-                            <i class='bx bxl-php'></i>
-                            <i class='bx bxl-javascript'></i>
-                        </div>
+                            <i class='bx bxl-html5' ></i>
+                            <i class='bx bxl-css3' ></i>
+                            <i class='bx bxl-php' ></i>
+                            <i class='bx bxl-javascript' ></i>
                     </div>
+                </div> -->
                 </div>
-                <!-- <div class="project-right project-item">
-                <div class="project-img">
-                    <a href="https://circlesolutions.bramsuurd.nl" target="_blank"><img src="/img/pika-1699989569943-1x.png" alt=""></a>
-                </div>
-                <div class="project-info project-info-right">
-                    <h3>CircleSolutions</h3>
-                    <h4>NHL Stenden periode 1 project</h4>
-                    <p>In dit project moesten we een website maken voor het bedrijf genaamt "CircleSolutions" dit bedrijf maakt intranetten en had een nieuwe website nodig om nieuwe klanten aan te trekken</p>
-                    <div class="project-buttons">
-                        <a href="https://circlesolutions.bramsuurd.nl" target="_blank">Bekijk project <i class='bx bx-link-external'></i></a>
-                        <a href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">Bekijk Code <i class='bx bx-link-external'></i></a>
-                    </div>
-                    <h5>Gebruikte talen</h5>
-                    <div class="project-languages">
-                        <i class='bx bxl-html5' ></i>
-                        <i class='bx bxl-css3' ></i>
-                        <i class='bx bxl-php' ></i>
-                        <i class='bx bxl-javascript' ></i>
-                </div>
-            </div> -->
-            </div>
+        </div>
     </section>
 
     <section id="contact" class="contact">

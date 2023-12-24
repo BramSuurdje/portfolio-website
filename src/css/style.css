@@ -245,7 +245,11 @@ nav {
 	#about {
 		padding: 5rem 0;
 	}
+}
 
+.about-wrapper {
+	display: flex;
+	justify-content: center;
 }
 
 .about-content {
@@ -333,7 +337,11 @@ nav {
 	#projects {
 		padding: 5rem 0;
 	}
+}
 
+#projects .project-center {
+	display: flex;
+	justify-content: center;
 }
 
 .projects-wrapper {

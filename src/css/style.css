@@ -49,6 +49,16 @@ a {
 	border:1px solid rgba(255, 255, 255, 0.18);
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
+
+.header-wrapper {
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	top: 0;
+
+}
 .header-container {
 	display: flex;
 	justify-content: space-between;
@@ -56,9 +66,6 @@ a {
 	font-size: 1rem;
 	/* background-color: var(--background-1); */
 	box-shadow: 0 0 10px rgba(0,0,0,.09);
-	position:fixed;
-	top: 0;
-	z-index: 9999;
 	max-width: 1280px;
 	width: 100%;
 	border-radius: 50px;
@@ -76,6 +83,7 @@ nav {
 	align-items: center;
 	justify-content: center;
 	z-index: 9999;
+	width: 100%;
 }
 .hero-background {
 	background-image: url(/img/header-background.png);

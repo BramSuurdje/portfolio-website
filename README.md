@@ -1,4 +1,4 @@
-# Project Name
+# My Portfolio Website
 
 ## Description
 This is my personal portfolio website created for NHLStenden. It's a playground to test new skills I've learned and showcase projects completed over the past year.

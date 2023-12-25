@@ -350,8 +350,13 @@ nav {
 
 .projects-title {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.projects-title {
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .projects-title h3 {
@@ -407,13 +412,13 @@ nav {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {
 	.project-info {
 		width: 100%;
 		padding: 0 2rem;
+		margin-top: 2rem;
 	}
 }
 
@@ -461,7 +466,7 @@ nav {
 .project-info h5 {
 	font-size: 1.3rem;
 	font-weight: 700;
-	margin-top: 3.5rem;
+	margin-top: auto;
 }
 
 .project-languages {

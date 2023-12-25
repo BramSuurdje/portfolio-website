@@ -1,31 +1,43 @@
+<?php
+require_once('../db-connect.php'); // Include the database connection script
+
+// Fetch documents from the database
+$stmt = $conn->query('SELECT * FROM documents');
+$documents = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <?php include('../metadata.php') ?>
-    <style>
-        /* Voeg hier je minimale styling toe */
-        .file-container {
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
-    <h2>Overzicht van geüploade bestanden</h2>
-
-    <?php
-    $files = glob("uploads/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
-
-    foreach ($files as $file) {
-        $filename = basename($file);
-        echo "<div class='file-container'>";
-        echo "<a href='" . $file . "'>" . $filename . "</a>";
-        echo "<form method='post' action='./verwijder.php'>";
-        echo "<input type='hidden' name='filename' value='" . $filename . "'>";
-        echo "<input type='submit' value='Verwijderen' name='verwijderen'>";
-        echo "</form>";
-        echo "</div>";
-    }
-    ?>
-
+    <h1>Document Overview</h1>
+    
+    <?php if (count($documents) > 0) : ?>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>File Name</th>
+                    <th>File Type</th>
+                    <th>File Size (bytes)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($documents as $document) : ?>
+                    <tr>
+                        <td><?php echo $document['id']; ?></td>
+                        <td><?php echo $document['file_name']; ?></td>
+                        <td><?php echo $document['file_type']; ?></td>
+                        <td><?php echo $document['file_size']; ?></td>
+                        <td><a href="view_document.php?id=<?php echo $document['id']; ?>">View</a></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    <?php else : ?>
+        <p>No documents found.</p>
+    <?php endif; ?>
 </body>
 </html>

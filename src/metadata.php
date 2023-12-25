@@ -7,4 +7,4 @@
 <script src="js/smoothscroll.js" defer></script>
 <meta name="theme-color" content="#222435">
 <link rel="stylesheet" href="/css/style.css?id=1235">
-<script src="https://cdn.tailwindcss.com"></script>
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->

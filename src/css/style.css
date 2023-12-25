@@ -173,7 +173,6 @@ nav {
 		flex-direction: column-reverse;
 		gap: 2rem;
 	}
-
 }
 
 .hero-main {
@@ -893,6 +892,13 @@ nav {
 }
 
 table {
-	border-collapse: collapse;
+	max-width: 1280px;
 	width: 100%;
 }
+/* table td {
+	border: 1px solid var(--text-color-1);
+}
+
+table th {
+	border: 1px solid var(--text-color-1);
+} */

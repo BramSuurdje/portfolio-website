@@ -1,57 +1,49 @@
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      $target_dir = "uploads/";
-      $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-      $uploadOk = 1;
-      $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+session_start();
+require_once('../db-connect.php');
 
-      // Controleer of het een afbeelding is
-      if(isset($_FILES["fileToUpload"])) {
-          $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-          if ($check !== false) {
-              echo "Bestand is een afbeelding - " . $check["mime"] . ".<br>";
-              $uploadOk = 1;
-          } else {
-              echo "Sorry, bestand is geen afbeelding.<br>";
-              $uploadOk = 0;
-          }
-      }
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
+    $fileName = $_FILES['fileToUpload']['name'];
+    $fileTmpName = $_FILES['fileToUpload']['tmp_name'];
+    $fileSize = $_FILES['fileToUpload']['size'];
+    $fileType = $_FILES['fileToUpload']['type'];
 
-      // Controleer bestandsgrootte
-      if ($_FILES["fileToUpload"]["size"] > 3000000) {
-          echo "Sorry, bestand is te groot.<br>";
-          $uploadOk = 0;
-      }
+    if ($fileName != "") {
+        $fileContent = file_get_contents($fileTmpName);
 
-      // Controleer bestandsnaam
-      if (strlen($_FILES["fileToUpload"]["name"]) > 50 || !preg_match('/[A-Z]/', $_FILES["fileToUpload"]["name"])) {
-          echo "Ongeldige bestandsnaam.<br>";
-          $uploadOk = 0;
-      }
+        $tableCheck = $conn->query('SHOW TABLES LIKE "documents"');
+        $tableExists = $tableCheck->rowCount() > 0;
 
-      // Controleer of de map 'uploads' bestaat, anders maak deze aan
-      if (!file_exists($target_dir)) {
-        mkdir($target_dir, 0777, true);
-      }
-
-      // Controleer of de map schrijfbaar is
-      if (!is_writable($target_dir)) {
-        echo "Upload map is niet schrijfbaar. Controleer de permissies.<br>";
-        $uploadOk = 0;
-      }
-
-      // Upload het bestand
-      if ($uploadOk == 0) {
-        echo "Sorry, bestand is niet geüpload.<br>";
-      } else {
-        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-            echo "Het bestand " . basename($_FILES["fileToUpload"]["name"]) . " is geüpload.";
-        } else {
-            echo "Sorry, er was een probleem met het uploaden van het bestand.";
+        if (!$tableExists) {
+            $sql = 'CREATE TABLE documents (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                file_name VARCHAR(255) NOT NULL,
+                file_content LONGBLOB NOT NULL,
+                file_type VARCHAR(100) NOT NULL,
+                file_size INT NOT NULL
+            )';
+            
+            $conn->exec($sql);
         }
-      }
-  }
-  ?>
+
+        $sql = "INSERT INTO documents (file_name, file_content, file_type, file_size) VALUES (?, ?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+
+        $stmt->bindParam(1, $fileName);
+        $stmt->bindParam(2, $fileContent, PDO::PARAM_LOB);
+        $stmt->bindParam(3, $fileType);
+        $stmt->bindParam(4, $fileSize);
+
+        if ($stmt->execute()) {
+            echo "File uploaded successfully.";
+        } else {
+            echo "Error uploading file.";
+        }
+    } else {
+        echo "Please select a file to upload.";
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">

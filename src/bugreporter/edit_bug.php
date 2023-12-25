@@ -41,11 +41,10 @@ if (isset($_GET['id'])) {
 </body>
 </html>
 <?php
-        // Close PHP tag after HTML code
     } else {
         echo 'Bug not found';
     }
 } else {
-    echo 'Bug ID not provided';
+    header("Location: ./index.php");
 }
 ?>

@@ -11,11 +11,19 @@
 
 :root {
 	/* ik zet hier alle kleuren in een variabele, zodat ik deze later makkelijk kan aanpassen */
-	--background-1: #2b2d42;
-	--background-2: #222435;
-	--text-color-1: #edf2f4;
-	--text-color-2: #8d99ae;
-	--title-color-1: #5E5DF0;
+	--background: #18151e;
+	--foreground: #24202d;
+	--border: #3d354b;
+
+	--primary: #7c3aed;
+	--primary-content: #ffffff;
+	--primary-copy: #d8d6dc;
+	--primary-light: #9b69f1;
+	--primary-dark: #5f14e0;
+
+	--success: #3aed3a;
+	--warning: #edc03a;
+	--danger: #ed3a3a;
 }
 
 body::-webkit-scrollbar {
@@ -31,8 +39,8 @@ body {
 }
 
 html {
-	background-color: var(--background-1);
-	color: var(--text-color-1);
+	background-color: var(--foreground);
+	color: var(--primary-content);
 	scroll-behavior: smooth;
 	font-family: 'Poppins', 'Arial';
 }
@@ -72,7 +80,7 @@ a {
 	justify-content: space-between;
 	padding: 1rem 2rem;
 	font-size: 1rem;
-	/* background-color: var(--background-1); */
+	/* background-color: var(--foreground); */
 	box-shadow: 0 0 10px rgba(0, 0, 0, .09);
 	max-width: 1280px;
 	width: 100%;
@@ -81,7 +89,7 @@ a {
 }
 
 .header-contact a {
-	background-color: var(--title-color-1);
+	background-color: var(--primary);
 	padding: 5px 20px;
 	border-radius: 15px;
 	transition: 0.3s;
@@ -128,18 +136,18 @@ nav {
 }
 
 .nav-item a {
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	transition: 0.2s;
 }
 
 .header-container a:hover {
-	color: var(--text-color-2);
+	color: var(--primary-copy);
 	text-decoration: underline;
 }
 
 .header-contact a:hover {
 	text-decoration: none;
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	scale: 1.05;
 	transition: 0.3s
 }
@@ -189,7 +197,7 @@ nav {
 }
 
 .hero-text h1 {
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	font-size: 3rem;
 	line-height: 1.2;
 	margin-bottom: 1rem;
@@ -197,23 +205,23 @@ nav {
 }
 
 .hero-text p {
-	color: var(--text-color-2);
+	color: var(--primary-content);
 	font-size: 1rem;
 	font-weight: 500;
 }
 
 .hero-text a {
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	transition: 0.2s;
 }
 
 .hero-text a:hover {
-	color: var(--title-color-1);
+	color: var(--primary-copy);
 	text-decoration: underline;
 }
 
 .hero-text span {
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	font-size: 1rem;
 	display: flex;
 	margin: 1rem 0;
@@ -221,13 +229,13 @@ nav {
 }
 
 .hero-text span i {
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	font-size: 2rem;
 	transition: 0.2s;
 }
 
 .hero-text span i:hover {
-	color: var(--title-color-1);
+	color: var(--primary-copy);
 }
 
 .hero-img img {
@@ -236,8 +244,8 @@ nav {
 }
 
 #about {
-	background-color: var(--background-2);
-	padding: 15rem 0;
+	background-color: var(--foreground);
+	padding: 10rem 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -286,17 +294,17 @@ nav {
 }
 
 .about-text a {
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	transition: 0.3s;
 }
 
 .about-text a:hover {
-	color: var(--title-color-1);
+	color: var(--primary);
 	text-decoration: underline;
 }
 
 .about-text h3 {
-	color: var(--title-color-1);
+	color: var(--primary);
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 1rem;
@@ -304,7 +312,7 @@ nav {
 }
 
 .about-text h4 {
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	font-size: 2.1rem;
 	line-height: 1.4;
 	margin-bottom: 2rem;
@@ -315,7 +323,7 @@ nav {
 }
 
 .about-text p {
-	color: var(--text-color-2);
+	color: var(--primary-content);
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -326,7 +334,7 @@ nav {
 }
 
 #projects {
-	padding: 15rem 0;
+	padding: 10rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -363,7 +371,7 @@ nav {
 	font-weight: 700;
 	margin-bottom: 2rem;
 	text-transform: uppercase;
-	color: var(--title-color-1);
+	color: var(--primary);
 }
 
 .project-content {
@@ -437,8 +445,8 @@ nav {
 }
 
 .project-info a {
-	color: var(--text-color-1);
-	background-color: var(--background-2);
+	color: var(--primary-content);
+	background-color: var(--background);
 	border-radius: 1rem;
 	width: inherit;
 	padding: 0.8rem 4rem;
@@ -446,7 +454,7 @@ nav {
 }
 
 .project-info a:hover {
-	background-color: var(--title-color-1);
+	background-color: var(--primary);
 	scale: 1.05;
 }
 
@@ -484,7 +492,7 @@ nav {
 }
 
 .project-languages i {
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	transition: 0.2s;
 }
 
@@ -514,8 +522,8 @@ nav {
 }
 
 #contact {
-	background-color: var(--background-2);
-	padding: 15rem 0;
+	background-color: var(--foreground);
+	padding: 10rem 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -527,7 +535,7 @@ nav {
 
 .contact-text p {
 	display: flex;
-	color: var(--title-color-1);
+	color: var(--primary);
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 1rem;
@@ -552,20 +560,20 @@ nav {
 .text-input {
 	justify-content: center;
 	display: flex;
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	width: 100%;
 }
 
 .text-input input {
 	border-radius: 7px;
 	padding: 0.7rem 0 0.7rem 1rem;
-	border-color: var(--background-1);
+	border-color: var(--foreground);
 	width: 100%;
 	margin: 10px 5px;
 	color: white;
 	border-style: solid;
+	background-color: var(--background);
 	font-size: 0.8rem;
-	background-color: rgb(32, 32, 32);
 	transition: 0.2s;
 }
 
@@ -575,7 +583,7 @@ nav {
 }
 
 .text-input input:focus {
-	outline-color: var(--title-color-1);
+	outline-color: var(--primary);
 	text-decoration: none;
 }
 
@@ -587,12 +595,12 @@ nav {
 
 .contact-select select {
 	width: 100%;
-	padding: 0.7rem 3.1rem 0.7rem 1.5rem;
+	padding: 0.7rem 0 0.7rem 1rem;
 	margin: 10px 5px;
 	color: white;
 	border-radius: 7px;
-	border-color: var(--background-1);
-	background-color: rgb(32, 32, 32);
+	border-color: var(--foreground);
+	background-color: var(--background)
 }
 
 .contact-message {
@@ -602,13 +610,14 @@ nav {
 }
 
 .contact-message textarea {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	width: 100%;
-	padding: 0.7rem 3.1rem 0.7rem 1.5rem;
+	padding: 0.7rem 0 0.7rem 1rem;
 	margin: 10px 5px;
 	border-radius: 7px;
-	border-color: var(--background-1);
-	color: var(--text-color-1);
-	background-color: rgb(32, 32, 32);
+	border-color: var(--foreground);
+	color: var(--primary-content);
+	background-color: var(--background);
 	border-width: 2px;
 	min-width: 490px;
 	min-height: 100px;
@@ -616,18 +625,18 @@ nav {
 }
 
 .contact-message textarea:focus {
-	border-color: var(--title-color-1);
-	outline-color: var(--title-color-1);
-	text-decoration-color: var(--title-color-1);
+	border-color: var(--primary);
+	outline-color: var(--primary);
+	text-decoration-color: var(--primary);
 }
 
 .contact-button {
 	border-width: 2px;
-	border-color: var(--title-color-1);
+	border-color: var(--primary);
 	border-radius: 1rem;
 	border-style: solid;
-	color: var(--text-color-1);
-	background-color: var(--title-color-1);
+	color: var(--primary-content);
+	background-color: var(--primary);
 	cursor: pointer;
 	font-size: 1rem;
 	margin-left: 10px;
@@ -645,8 +654,8 @@ nav {
 
 .contact-button:hover {
 	background-color: transparent;
-	color: var(--text-color-1);
-	border-color: var(--title-color-1);
+	color: var(--primary-content);
+	border-color: var(--primary);
 }
 
 .contact-newsletter {
@@ -654,7 +663,7 @@ nav {
 }
 
 #opdracht {
-	background-color: var(--title-color-1);
+	background-color: var(--primary);
 	padding: 25px 50px;
 }
 
@@ -664,7 +673,7 @@ nav {
 }
 
 #footer {
-	background-color: var(--background-1);
+	background-color: var(--background);
 	padding: 25px 50px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .09);
 	display: flex;
@@ -675,7 +684,7 @@ nav {
 
 .footer-text h3 {
 	font-size: 1rem;
-	color: var(--text-color-1);
+	color: var(--primary-content);
 	text-align: center;
 }
 
@@ -704,8 +713,8 @@ nav {
 }
 
 .opdrachten-list-item {
-	background-color: var(--title-color-1);
-	color: var(--text-color-1);
+	background-color: var(--primary);
+	color: var(--primary-content);
 	width: 100%;
 	text-align: center;
 	height: 4rem;
@@ -721,8 +730,8 @@ nav {
 }
 
 .opdrachten-list-item:hover {
-	background-color: var(--text-color-1);
-	color: var(--title-color-1);
+	background-color: var(--primary-content);
+	color: var(--primary);
 }
 
 @media only screen and (max-width: 600px) {
@@ -806,7 +815,7 @@ nav {
 		top: 70px;
 		gap: 0;
 		flex-direction: column;
-		background-color: var(--background-1);
+		background-color: var(--foreground);
 		width: 100%;
 		text-align: center;
 		transition: 0.3s;
@@ -837,9 +846,9 @@ nav {
 }
 
 .success-button {
-	background: var(--title-color-1);
+	background: var(--primary);
 	border-radius: 999px;
-	box-shadow: var(--title-color-1) 0 10px 20px -10px;
+	box-shadow: var(--primary) 0 10px 20px -10px;
 	box-sizing: border-box;
 	color: #FFFFFF;
 	cursor: pointer;
@@ -896,9 +905,9 @@ table {
 	width: 100%;
 }
 /* table td {
-	border: 1px solid var(--text-color-1);
+	border: 1px solid var(--primary-content);
 }
 
 table th {
-	border: 1px solid var(--text-color-1);
+	border: 1px solid var(--primary-content);
 } */

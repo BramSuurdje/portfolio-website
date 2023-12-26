@@ -27,7 +27,7 @@
 
     <div class="flex flex-col justify-center items-center mt-24">
       <h1 class="text-4xl font-bold">Semester 1</h1>
-      <div class="grid grid-cols-4 gap-5 max-w-7xl mt-5">
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-5 max-w-7xl mt-5">
       <?php
         $documenten = [
             "Edumundo Opdrachten" => [

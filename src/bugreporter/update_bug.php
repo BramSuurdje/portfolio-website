@@ -39,9 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':solution', $solution);
             $stmt->bindParam(':bugId', $bugId);
             $stmt->execute();
-
-            // Redirect back to the main bug reporting page after successful update
-            header('Location: /bugreporter/');
+            if ($stmt->execute()) {
+                header('Location: /bugreporter/');
+            }
             exit();
         } catch (PDOException $e) {
             echo 'Error: ' . $e->getMessage();

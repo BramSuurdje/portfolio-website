@@ -44,7 +44,5 @@ if (isset($_GET['id'])) {
     } else {
         echo 'Bug not found';
     }
-} else {
-    header("Location: ./index.php");
 }
 ?>

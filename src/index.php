@@ -18,7 +18,6 @@
                     <span>
                         <a target="_blank" href="https://github.com/BramSuurdje"><i class='bx bxl-github'></i></a>
                         <a target="_blank" href="https://www.linkedin.com/in/bramsuurd/"><i class='bx bxl-linkedin-square'></i></a>
-                        <a target="_blank" href="https://wa.me/+310621621560"><i class='bx bxl-whatsapp'></i></a>
                     </span>
                 </div>
                 <div class="hero-img">

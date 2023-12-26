@@ -57,7 +57,7 @@
                 <div class="project-content">
                     <div class="project-item">
                         <div class="project-img">
-                            <a href="https://circlesolutions.bramsuurd.nl" target="_blank"><img src="/img/pika-1699989569943-1x.png" alt=""></a>
+                            <a href="https://circlesolutions.bramsuurd.nl" target="_blank"><img src="/img/Mockup.png" loading="lazy" alt=""></a>
                         </div>
                         <div class="project-info">
                             <h3>CircleSolutions</h3>

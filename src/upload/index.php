@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
         $sql = "INSERT INTO documents (file_name, file_content, file_type, file_size) VALUES (?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
 
-        $stmt->bindParam(1, $fileName);
+        $stmt->bindParam(1, $fileName );
         $stmt->bindParam(2, $fileContent, PDO::PARAM_LOB);
         $stmt->bindParam(3, $fileType);
         $stmt->bindParam(4, $fileSize);

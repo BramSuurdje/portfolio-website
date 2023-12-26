@@ -674,12 +674,19 @@ nav {
 
 #footer {
 	background-color: var(--background);
-	padding: 25px 50px;
+
 	box-shadow: 0 0 10px rgba(0, 0, 0, .09);
 	display: flex;
 	justify-content: center;
-	bottom: 0;
 	width: 100%;
+	min-height: 50px;
+	height: 8vh;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer-text h3 {

@@ -36,10 +36,6 @@
                 if (!$hasError)
                 {
                 echo "<p class='success-text'>thank you for contacting me $name, i will come in contact with you soon regarding your $reason. this is the email that you have submitted:($email)</p> ";
-                if ($newsletter == 'yes')
-                {
-                    echo "<br><p class='success-text'> i also want to thank you for subscribing to the newsletter!</p>";
-                }
                 } else {
                     header("Location: /");
                 }

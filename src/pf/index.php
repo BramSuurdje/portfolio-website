@@ -14,7 +14,7 @@
               </div>
               <div class="flex self-center items-center">
                 <ul class="flex gap-4">
-                  <li class="flex items-center justify-center"><a class="text-lg font-bold" href="./pf/jaar1/">Jaar 1</a></li>
+                  <li class="flex items-center justify-center"><a class="text-lg font-bold" href="./jaar1/">Jaar 1</a></li>
                   <!-- <li class="flex items-center justify-center"><a class="text-lg font-bold" href="./jaar1/">Jaar 2</a></li>
                   <li class="flex items-center justify-center"><a class="text-lg font-bold" href="./jaar1/">Jaar 3</a></li>
                   <li class="flex items-center justify-center"><a class="text-lg font-bold" href="./jaar1/">Jaar 4</a></li> -->

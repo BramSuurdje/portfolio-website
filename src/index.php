@@ -5,9 +5,7 @@
     <?php include("metadata.php") ?>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
-
     <section id="home" class="hero hero-background">
         <?php include("components/header.php"); ?>
         <div class="hero-center">

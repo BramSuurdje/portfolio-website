@@ -534,6 +534,10 @@ nav {
 		padding: 5rem 0;
 	}
 
+	body {
+		overflow: hidden;
+	}
+
 }
 
 .contact-text p {

@@ -624,7 +624,7 @@ nav {
 	color: var(--primary-content);
 	background-color: var(--background);
 	border-width: 2px;
-	min-width: 490px;
+	min-width: inherit;
 	min-height: 100px;
 	max-height: 250px;
 }

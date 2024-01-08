@@ -548,13 +548,15 @@ nav {
 
 .contact-items {
 	display: flex;
-	width: 500px;
+	width: 100vw;
+	max-width: 500px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .contact-content {
 	display: flex;
+	padding: 0 1rem;
 	justify-content: center;
 	align-items: center;
 	width: 100%;

@@ -45,6 +45,18 @@
         </div>
     </section>
 
+    <?php
+    $projects = [
+        [
+            'name' => 'CircleSolutions',
+            'organization' => 'NHL Stenden periode 1 project',
+            'description' => 'In this project, we had to create a website for a company called "CircleSolutions." This company creates intranets and needed a new website to attract new customers.',
+            'website' => 'https://circlesolutions.bramsuurd.nl',
+            'code' => 'https://github.com/NHL-P1-INF1A/Project-CircleSolutions',
+            'languages' => ['HTML5', 'CSS3', 'PHP', 'JavaScript']
+        ],
+    ];
+    ?>
     <section id="projects">
         <div class="project-center">
             <div class="projects-wrapper">
@@ -52,48 +64,30 @@
                     <h3>Projects</h3>
                 </div>
                 <div class="project-content">
-                    <div class="project-item">
-                        <div class="project-img">
-                            <a href="https://circlesolutions.bramsuurd.nl" target="_blank"><img src="/img/Mockup.png" loading="lazy" alt=""></a>
-                        </div>
-                        <div class="project-info">
-                            <h3>CircleSolutions</h3>
-                            <h4>NHL Stenden periode 1 project</h4>
-                            <p>In this project, we had to create a website for a company called "CircleSolutions." This company creates intranets and needed a new website to attract new customers.</p>
-                            <div class="project-buttons">
-                                <a href="https://circlesolutions.bramsuurd.nl" target="_blank">Check out website <i class='bx bx-link-external'></i></a>
-                                <a href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">View Code <i class='bx bx-link-external'></i></a>
+                    <?php foreach ($projects as $project) : ?>
+                        <div class="project-item">
+                            <div class="project-img">
+                                <a href="<?php echo $project['website']; ?>" target="_blank"><img src="/img/Mockup.png" loading="lazy" alt=""></a>
                             </div>
-                            <h5>Used languages</h5>
-                            <div class="project-languages">
-                                <i class='bx bxl-html5'></i>
-                                <i class='bx bxl-css3'></i>
-                                <i class='bx bxl-php'></i>
-                                <i class='bx bxl-javascript'></i>
+                            <div class="project-info">
+                                <h3><?php echo $project['name']; ?></h3>
+                                <h4><?php echo $project['organization']; ?></h4>
+                                <p><?php echo $project['description']; ?></p>
+                                <div class="project-buttons">
+                                    <a href="<?php echo $project['website']; ?>" target="_blank">Check out website <i class='bx bx-link-external'></i></a>
+                                    <a href="<?php echo $project['code']; ?>" target="_blank">View Code <i class='bx bx-link-external'></i></a>
+                                </div>
+                                <h5>Used languages</h5>
+                                <div class="project-languages">
+                                    <?php foreach ($project['languages'] as $language) : ?>
+                                        <i class='bx bxl-<?php echo strtolower($language); ?>'></i>
+                                    <?php endforeach; ?>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- <div class="project-right project-item">
-                    <div class="project-img">
-                        <a href="https://circlesolutions.bramsuurd.nl" target="_blank"><img src="/img/pika-1699989569943-1x.png" alt=""></a>
-                    </div>
-                    <div class="project-info project-info-right">
-                        <h3>CircleSolutions</h3>
-                        <h4>NHL Stenden periode 1 project</h4>
-                        <p>In dit project moesten we een website maken voor het bedrijf genaamt "CircleSolutions" dit bedrijf maakt intranetten en had een nieuwe website nodig om nieuwe klanten aan te trekken</p>
-                        <div class="project-buttons">
-                            <a href="https://circlesolutions.bramsuurd.nl" target="_blank">Bekijk project <i class='bx bx-link-external'></i></a>
-                            <a href="https://github.com/NHL-P1-INF1A/Project-CircleSolutions" target="_blank">Bekijk Code <i class='bx bx-link-external'></i></a>
-                        </div>
-                        <h5>Gebruikte talen</h5>
-                        <div class="project-languages">
-                            <i class='bx bxl-html5' ></i>
-                            <i class='bx bxl-css3' ></i>
-                            <i class='bx bxl-php' ></i>
-                            <i class='bx bxl-javascript' ></i>
-                    </div>
-                </div> -->
+                    <?php endforeach; ?>
                 </div>
+            </div>
         </div>
     </section>
 

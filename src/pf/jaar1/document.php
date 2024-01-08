@@ -20,7 +20,7 @@
 <body>
   <div class="flex sm:flex-row justify-center items-center flex-col-reverse">
     <a class=" mr-11 mt-11 font-bold text-3xl self-start" href="../jaar1/">Ga Terug</a>
-    <?php echo '<iframe class="h-screen" width="50%" height="950" src="./documents/' . $file . '" frameborder="0"></iframe>'; ?>
+    <?php echo '<iframe class="h-screen sm:w-1/2 w-full"  height="950" src="./documents/' . $file . '" frameborder="0"></iframe>'; ?>
   </div>
 </body>
 </html>

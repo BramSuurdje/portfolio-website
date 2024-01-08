@@ -1,6 +1,3 @@
-@import url(videotheek.css);
-@import url(opdracht.css);
-
 * {
 	padding: 0;
 	margin: 0;
@@ -11,15 +8,15 @@
 
 :root {
 	/* ik zet hier alle kleuren in een variabele, zodat ik deze later makkelijk kan aanpassen */
-	--background: #18151e;
-	--foreground: #24202d;
-	--border: #3d354b;
+	--background: #131420;
+	--foreground: #1d1e30;
+	--border: #404040;
 
-	--primary: #7c3aed;
+	--primary: #6b56ff;
 	--primary-content: #ffffff;
 	--primary-copy: #d8d6dc;
-	--primary-light: #9b69f1;
-	--primary-dark: #5f14e0;
+	--primary-light: #9889ff;
+	--primary-dark: #3e23ff;
 
 	--success: #3aed3a;
 	--warning: #edc03a;

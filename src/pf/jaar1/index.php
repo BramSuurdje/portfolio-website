@@ -27,31 +27,51 @@
 
     <div class="flex flex-col justify-center items-center mt-24">
       <h1 class="text-4xl font-bold">Semester 1</h1>
-      <div class="grid grid-cols-1 sm:grid-cols-4 gap-5 max-w-7xl mt-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 max-w-7xl mt-5">
       <?php
         $documenten = [
             "Edumundo Opdrachten" => [
-              "phpFile" => "eoj1s1.php",
-              "imageFile" => "./documents/Edermundo.voorkant.png"
+              "imageFile" => "./documents/Edermundo.voorkant.png",
+              "link" => "document.php?file=Portfolio-2022-2023.pdf"
             ],
             "Plan Van Aanpak" => [
-              "phpFile" => "./pvaj1s1.php",
-              "imageFile" => "./documents/PVA.voorkant.png"
+              "imageFile" => "./documents/PVA.voorkant.png",
+              "link" => "document.php?file=Plan-van-aanpak-Circle SolutionsV1.2.pdf"
             ],
             "Notulen" => [
-              "phpFile" => "./notulenj1s1.php",
-              "imageFile" => "./documents/Notulen.voorkant.png"
+              "imageFile" => "./documents/Notulen.voorkant.png",
+              "link" => "document.php?file=notulen-11-12-2023.pdf"
             ],
             "Agenda" => [
-              "phpFile" => "./agendaj1s1.php",
-              "imageFile" => "./documents/Agenda.voorkant.png"
+              "imageFile" => "./documents/Agenda.voorkant.png",
+              "link" => "document.php?file=Agenda-19-10-2023.pdf"
+            ],
+            "Communiceren" => [
+              "imageFile" => "https://placehold.co/240x340",
+              "link" => "#"
+            ],
+            "Vergadertechnieken" => [
+              "imageFile" => "https://placehold.co/240x340",
+              "link" => "#"
+            ],
+            "Presenteren" => [
+              "imageFile" => "https://placehold.co/240x340",
+              "link" => "#"
+            ],
+            "Feedback geven en krijgen" => [
+              "imageFile" => "https://placehold.co/240x340",
+              "link" => "#"
+            ],
+            "Reflecteren" => [
+              "imageFile" => "https://placehold.co/240x340",
+              "link" => "#"
             ]
         ];
 
         foreach ($documenten as $document => $files) {
             echo "<div class='flex flex-col justify-center items-center'>";
-            echo "<a href='" . $files['phpFile'] . "'><img src='" . $files['imageFile'] . "' alt='" . $document . "' loading='lazy'></a>";
-            echo "<a class='text-2xl font-bold' href='" . $files['phpFile'] . "'>" . $document . "</a>";
+            echo "<a href='" . $files['link'] . "'><img class=' w-[240px] h-[340px]' src='" . $files['imageFile'] . "' alt='" . $document . "' loading='lazy'></a>";
+            echo "<a class=' text-lg font-bold' href='" . $files['link'] . "'>" . $document . "</a>";
             echo "</div>";
         }
       ?>

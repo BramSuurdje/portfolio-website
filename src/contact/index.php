@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./contact.css">
     <?php include("../metadata.php") ?>
+    <style>
+        .success-box {
+            flex-direction: column;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <?php include("../components/header.php"); ?>
@@ -35,7 +40,7 @@
                 }
                 if (!$hasError)
                 {
-                echo "<p class='success-text'>thank you for contacting me $name, i will come in contact with you soon regarding your $reason. this is the email that you have submitted:($email)</p> ";
+                echo "<p class='text-xl max-w-7xl text-center' class='success-text'>thank you for contacting me $name, i will come in contact with you soon regarding your $reason. this is the email that you have submitted:($email)</p> ";
                 } else {
                     header("Location: /");
                 }

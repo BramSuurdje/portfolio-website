@@ -1,12 +1,3 @@
-<?php
-/* 
-* Filename      : footer.php
-* Assignment    : portfolio website
-* Created       : 10/2/2023
-* Description   : 
-* Programmer    : Bram Suurd | 5371333
-*/
-?>
 <footer id="footer" class="footer">
             <div class="footer-content">
                 <div class="footer-text">
